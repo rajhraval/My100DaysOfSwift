@@ -23,4 +23,4 @@ The Summary of the entire day was:
 - Enums are a way of grouping related values so you can use them without spelling mistakes.
 - You can attach raw values to enums so they can be created from integers or strings, or you can add associated values to store additional information about each case.
 
-**That's All for the Day 2 of 100DaysOfSwift**
+**That's All for the Day 2 of 100DaysOfSwift!**
