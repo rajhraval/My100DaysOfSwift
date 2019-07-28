@@ -4,6 +4,8 @@
 
 ### Operators and Conditions
 
+Today I learn about:
+
 - Arithmetic operators
 - Operators overrloading
 - Compound assignment operators
