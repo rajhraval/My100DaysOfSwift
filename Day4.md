@@ -4,6 +4,8 @@
 
 ### Loops
 
+Today I learnt about:
+
 - For loops
 - While loops
 - Repeat loops
