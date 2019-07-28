@@ -5,7 +5,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Closures - Part I](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day6.md)
+- [Closures - Part II](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day7.md)
 
 ### :clipboard: Topics
 
@@ -15,6 +15,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 - Day 4 - [Loops](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day4.md)
 - Day 5 - [Functions](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day5.md)
 - Day 6 - [Closures - Part I](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day6.md)
+- Day 7 - [Closures - Part II](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day7.md)
 
 
 
