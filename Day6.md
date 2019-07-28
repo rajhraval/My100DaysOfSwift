@@ -4,6 +4,8 @@
 
 ### Closures - Part I
 
+Today I learnt about:
+
 - Creating basic closures
 - Accepting parameters in closures
 - Returning values for closures
