@@ -4,6 +4,8 @@
 
 ### Functions
 
+Today I learnt about:
+
 - Writing functions
 - Accepting parameters
 - Returning values
