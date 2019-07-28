@@ -4,7 +4,7 @@
 
 ### Operators and Conditions
 
-Today I learn about:
+Today I learnt about:
 
 - Arithmetic operators
 - Operators overrloading
