@@ -1,4 +1,4 @@
-## Day 10 - HackingWithSwift - 100DaysOfSwift
+## Day 10 - HackingWithSwift - 100DaysOfSwift Challenge
 
 > Any fool can write code that a computer can understand, but good programmers write code that humans can understand. - Martin Fowler
 
