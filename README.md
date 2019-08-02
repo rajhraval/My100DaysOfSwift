@@ -25,7 +25,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 - Day 12 - [Optionals](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day12.md)
 
 
-### Blogs 
+### :books: Blogs 
 
 I wrote for myself to understand things better and also help other!
 
