@@ -5,7 +5,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Optionals](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day12.md)
+- [Swift Review - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day13.md)
 
 ### :clipboard: Topics
 
@@ -23,6 +23,11 @@ This covers my journey for the 100DaysOfSwift Challenge.
 - Day 10 - [Classes](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day10.md)
 - Day 11 - [Protocols and Extensions](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day11.md)
 - Day 12 - [Optionals](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day12.md)
+
+**Consolidation One**
+
+- Day 13 - [Swift Review - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day13.md)
+
 
 
 ### :books: Blogs 
