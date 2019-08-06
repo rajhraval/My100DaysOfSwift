@@ -5,7 +5,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Swift Review - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day15.md)
+- [Project One - Day One]
 
 ### :clipboard: Topics
 
@@ -29,6 +29,10 @@ This covers my journey for the 100DaysOfSwift Challenge.
 - Day 13 - [Swift Review - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day13.md)
 - Day 14 - [Swift Review - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day14.md)
 - Day 15 - [Swift Review - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day15.md)
+
+**Starting iOS**
+
+- Day 16 - [Project One - Part One]
 
 
 
