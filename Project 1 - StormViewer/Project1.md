@@ -21,7 +21,7 @@ Today I did (UIImageView, UIImage, UINavigationBar):
 - Loading Images with UIImageView
 - Final touchups with hidesBarsOnTap, Safe Area Margins
 
-**Project 1 - Day Two - Day 18 of 100DaysOfSwift**
+**Project 1 - Day Three - Day 18 of 100DaysOfSwift**
 
 > Nothing will work unless you do. - Maya Angelou
 
@@ -30,3 +30,17 @@ Today I completed my challenges:
 - Increasing the font size
 - Loading Images in sorted list order
 - Returning the picture with the number
+
+**Project 1- Summary**
+
+I learnt mainly about:
+
+- Table Views and Image Views
+- App Bundles
+- FileManager
+- TypeCasting
+- ViewControllers
+- Storyboards
+- Outlets
+- Auto Layout
+- UIImage
