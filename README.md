@@ -5,7 +5,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Two - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
+- [Project Two - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
 
 ### :clipboard: Topics
 
@@ -35,7 +35,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 - Day 16 - [Project One - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
 - Day 17 - [Project One - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
 - Day 18 - [Project One - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
-- Day 19 - [Project Two - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
+- Day 19 - [Project Two - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
 
 
 ### :books: Blogs 
