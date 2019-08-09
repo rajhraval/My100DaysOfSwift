@@ -3,8 +3,6 @@
 
 **Project 1 - Day One - Day 16 of 100DaysOfSwift**
 
->  The only way to learn a new programming language is by writing programs in it. - Dennis Ritchie
-
 Today I did (ViewControllers, Storyboards and FileManager Class):
 
 - Setting up the project in Xcode.
