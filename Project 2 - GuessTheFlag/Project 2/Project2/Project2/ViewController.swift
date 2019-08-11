@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
+    var totalAnswer = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = countries[correctAnswer].uppercased()
+        title = " \(countries[correctAnswer].uppercased()) Score : \(score)"
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -52,14 +53,27 @@ class ViewController: UIViewController {
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            totalAnswer += 1
+            if totalAnswer == 10 {
+                let bc = UIAlertController(title: "Final Score : \(score)", message: "Do you want to replay?", preferredStyle: .alert)
+                bc.addAction(UIAlertAction(title: "Replay", style: .default, handler: askQuestion))
+                present(bc, animated: true)
+                score = 0
+                totalAnswer = 0
+            } else {
+                let ac = UIAlertController(title: title, message: "Your Score is \(score)", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+                present(ac, animated: true)
+            }
         } else {
             title = "Wrong"
             score -= 1
+            totalAnswer += 1
+            let rc = UIAlertController(title: title, message: "It is flag of \(countries[sender.tag].uppercased())", preferredStyle: .alert)
+            rc.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            present(rc, animated: true)
         }
         
-        let ac = UIAlertController(title: title, message: "Your Score is \(score)", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        present(ac, animated: true)
     }
     
 }
