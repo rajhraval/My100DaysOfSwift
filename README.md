@@ -37,7 +37,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 - Day 18 - [Project One - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
 - Day 19 - [Project Two - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
 - Day 20 - [Project Two - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
-- Day 20 - [Project Two - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
+- Day 21 - [Project Two - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
 
 
 
