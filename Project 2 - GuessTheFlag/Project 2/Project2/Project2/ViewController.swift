@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(showScore))
+        
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "spain", "uk", "us"]
         
         button1.layer.borderWidth = 1
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = " \(countries[correctAnswer].uppercased()) Score : \(score)"
+        title = (countries[correctAnswer].uppercased())
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -74,6 +76,12 @@ class ViewController: UIViewController {
             present(rc, animated: true)
         }
         
+    }
+    
+    @objc func showScore() {
+        let ac = UIAlertController(title: "Current Score", message: "Your score is \(score)", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Close", style: .cancel))
+        present(ac, animated: true)
     }
     
 }
