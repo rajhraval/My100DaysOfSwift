@@ -5,7 +5,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%203-%20Social%20Media/Project3.md)
+- [Milestone Project]
 
 ### :clipboard: Topics
 
@@ -42,6 +42,9 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 - Day 21 - [Project Two - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%202%20-%20GuessTheFlag/Project2.md)
 - Day 22 - [Project Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%203-%20Social%20Media/Project3.md)
 
+**Consolidation Two**
+
+- Day 23 - [Milestone Project]
 
 
 ### :books: Blogs 
