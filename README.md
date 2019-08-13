@@ -5,7 +5,7 @@ This covers my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone Project]
+- [Milestone Project](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%201-3/milestone1.md)
 
 ### :clipboard: Topics
 
@@ -44,7 +44,7 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 
 **Consolidation Two**
 
-- Day 23 - [Milestone Project]
+- Day 23 - [Milestone Project](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%201-3/milestone1.md)
 
 
 ### :books: Blogs 
