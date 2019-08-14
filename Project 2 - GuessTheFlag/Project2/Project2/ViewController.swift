@@ -81,6 +81,7 @@ class ViewController: UIViewController {
     @objc func showScore() {
         let ac = UIAlertController(title: "Current Score", message: "Your score is \(score)", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Close", style: .cancel))
+        ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(ac, animated: true)
     }
     
