@@ -50,7 +50,7 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 **Web Views, User Input and AutoLayout**
 
 - Day 24 - [Project Four - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
-- Day 24 - [Project Four - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
+- Day 25 - [Project Four - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
 
 
 ### :books: Blogs 
