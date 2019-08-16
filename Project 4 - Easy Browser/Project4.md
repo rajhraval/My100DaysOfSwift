@@ -18,3 +18,28 @@ Today I did (UIProgressView, UIToolBar and Key-Value Observing):
 
 - Monitoring page loads: UIToolbar and UIProgressView
 - Refactoring for not visiting other websites links
+
+**Project 4 - Day Three - Day 26 of 100DaysOfSwift**
+
+> You have to believe in yourself, challenge yourself, and push yourself until the very end; that's the only way you'll succeed. - G'Dragon
+
+Today I completed the Challenges:
+
+- Showing an alert if user tries to visit a url that is not allowed.
+- Creating forward and backward toolbar items for WebView to move forward and backward.
+- Set up the Table View Controller as Initial View Controller.
+
+**Project 4 - Summary**
+
+I learnt mainly about:
+
+- loadView()
+- WKWebView
+- Delegation
+- URL
+- URLRequest
+- UIToolbar
+- UIProgressView
+- Key-Value Observing
+
+
