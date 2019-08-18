@@ -10,3 +10,11 @@ Today I did (Capturing in Closures, FileLoading):
 - Setting up the project in Xcode
 - Loading the file from the Bundle using contents of file URL
 - Picking the answer alert
+
+**Project 5 - Day Two - Day 28 of 100DaysOfSwift**
+
+Today I did (UITextChecker):
+
+- Preparing the submission and show the word.
+- Check whether or not the word is valid(original/possible/real)
+- Showing alert if the word is not valid(original/possible/real)

@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Five - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
+- [Project Five - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
 
 ### :clipboard: Topics
 
@@ -53,6 +53,7 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 - Day 25 - [Project Four - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
 - Day 26 - [Project Four - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
 - Day 27 - [Project Five - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
+- Day 28 - [Project Five - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
 
 
 ### :books: Blogs 
