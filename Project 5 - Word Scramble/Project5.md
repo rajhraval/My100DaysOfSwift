@@ -18,3 +18,26 @@ Today I did (UITextChecker):
 - Preparing the submission and show the word.
 - Check whether or not the word is valid(original/possible/real)
 - Showing alert if the word is not valid(original/possible/real)
+
+**Project 5 - Day Three - Day 29 of 100DaysOfSwift**
+
+> Every great developer you know got there by solving problems they were unqualified to solve until they actually did it. - Patrick Mckenzie
+
+Today I completed the challenges :
+
+- Disallowing a word less than three letters and same as the given input word
+- Refactoring the alert controller by creating a function to use it
+- Adding a left bar button item to refresh the game
+- Bug Fixing Challenge
+
+**Project 5 - Summary**
+
+I learnt mainly about:
+
+- Reloading table views
+- Inserting rows
+- Text inputs in alerts
+- Strings and UTF-16
+- Closures and capture lists
+- NSRange
+
