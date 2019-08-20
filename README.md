@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Six - Part One]
+- [Project Six - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 
 ### :clipboard: Topics
 
@@ -55,7 +55,7 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 - Day 27 - [Project Five - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
 - Day 28 - [Project Five - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
 - Day 29 - [Project Five - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
-- Day 30 - [Project Six - Part One]
+- Day 30 - [Project Six - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 
 
 ### :books: Blogs 
