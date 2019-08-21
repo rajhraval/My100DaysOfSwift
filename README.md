@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Six - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
+- [Project Six - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 
 ### :clipboard: Topics
 
@@ -33,7 +33,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 **Starting iOS**
 
-This mainly covers the basics about Table Views, Image Views, App Bundles, FileManager, TypeCasting, ViewControllers, Storyboards, Outlets, Auto Layout, UIImage, Outlets, @2x and @3x, Asset Catalogs, UIButton, CALayer, UIColor, Random Numbers, Actions, UIAlertController, UIBarButton and UIActivityViewController
+This mainly covers the basics about Table Views, Image Views, App Bundles, FileManager, TypeCasting, ViewControllers, Storyboards, Outlets, Auto Layout, UIImage, Outlets, @2x and @3x, Asset Catalogs, UIButton, CALayer, UIColor, Random Numbers, Actions, UIAlertController, UIBarButton and UIActivityViewController.
 
 - Day 16 - [Project One - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
 - Day 17 - [Project One - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%201%20-%20StormViewer/Project1.md)
@@ -49,6 +49,8 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 
 **Web Views, User Input and AutoLayout**
 
+This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL, URLRequest, UIToolbar, UIProgressView, Key-Value Observing, Reloading table views, Inserting rows, Text inputs in alerts, Strings and UTF-16, Closures and capture lists, NSRange, Equal heights, Aspect Ratio Constraints in AutoLayout, Visual Formatting Language in AutoLayout and Anchors in AutoLayout.
+
 - Day 24 - [Project Four - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
 - Day 25 - [Project Four - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
 - Day 26 - [Project Four - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%204%20-%20Easy%20Browser/Project4.md)
@@ -56,6 +58,8 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 - Day 28 - [Project Five - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
 - Day 29 - [Project Five - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%205%20-%20Word%20Scramble/Project5.md)
 - Day 30 - [Project Six - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
+- Day 31 - [Project Six - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
+
 
 
 ### :books: Blogs 
