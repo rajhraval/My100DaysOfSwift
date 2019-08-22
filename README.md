@@ -45,7 +45,7 @@ This mainly covers the basics about Table Views, Image Views, App Bundles, FileM
 
 **Consolidation Two**
 
-- Day 23 - [Milestone Project](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%201-3/milestone1.md)
+- Day 23 - [Milestone Project - I](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%201-3/milestone1.md)
 
 **Web Views, User Input and AutoLayout**
 
@@ -60,6 +60,9 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 - Day 30 - [Project Six - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 - Day 31 - [Project Six - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 
+**Consolidation Two**
+
+- Day 32 - [Milestone Project - II]()
 
 
 ### :books: Blogs 
