@@ -60,7 +60,7 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 - Day 30 - [Project Six - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 - Day 31 - [Project Six - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
 
-**Consolidation Two**
+**Consolidation Three**
 
 - Day 32 - [Milestone Project - III](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%204-6/milestone2.md)
 
