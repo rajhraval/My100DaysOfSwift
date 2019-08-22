@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Six - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%206%20-%20AutoLayout/Project6.md)
+- [Milestone Project - II](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%204-6/milestone2.md)
 
 ### :clipboard: Topics
 
@@ -62,7 +62,7 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 
 **Consolidation Two**
 
-- Day 32 - [Milestone Project - II]()
+- Day 32 - [Milestone Project - II](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%204-6/milestone2.md)
 
 
 ### :books: Blogs 
