@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Seven - Part One]()
+- [Project Seven - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%207%20-%20WPetitions/Project7.md)
 
 ### :clipboard: Topics
 
@@ -66,7 +66,7 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 
 **Codable, Buttons and GCD (Grand Central Dispatch)**
 
-- Day 33 - [Project Seven - Part One]()
+- Day 33 - [Project Seven - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%207%20-%20WPetitions/Project7.md)
 
 
 ### :books: Blogs 
