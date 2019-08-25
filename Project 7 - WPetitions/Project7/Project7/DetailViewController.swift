@@ -28,10 +28,20 @@ class DetailViewController: UIViewController {
         <html>
         <head>
         <meta name="viewport" content="width=device-width, intial-scale=1">
-        <style> body {font-size: 150%;} </style>
+        <style> h1,h3,p {font-family: -apple-system;}
+        p {font-size: 22px;}
+        </style>
         </head>
         <body>
+            <h1>
+            \(detailItem.title)
+            </h1>
+            <h3>
+        Signatures: \(detailItem.signatureCount)
+            </h3>
+            <p>
             \(detailItem.body)
+            </p>
         </body>
         </html>
         """

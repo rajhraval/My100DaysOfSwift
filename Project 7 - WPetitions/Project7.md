@@ -18,3 +18,22 @@ Today I did (UIStoryboard, Injecting HTML and Adding TabBar):
 
 - Rendering a petition in HTML
 - Creating a TabBar Item in the AppDelegate Class
+
+**Project 7 - Day Three - Day 35 of 100DaysOfSwift**
+
+> Through my education, I didn't just develop skills, I didn't just develop the ability to learn, but I developed confidence. - Michelle Obama
+
+Today I completed the challenges:
+
+- Adding a UIBarButton for Credits
+- Adding the search alert to search a particular petition
+- Experimenting with HTML and CSS 
+
+**Project 7 Summary**
+
+I learned about:
+
+- Downloading JSON with Data
+- Codable Protocol
+- UITabBarController
+- UIStoryboard

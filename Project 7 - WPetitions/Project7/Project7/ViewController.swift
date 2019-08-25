@@ -11,10 +11,19 @@ import UIKit
 class ViewController: UITableViewController {
     
     var petitions = [Petition]()
+    var filteredItems = [Petition]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchPetition))
+        
+        let refreshButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshPage))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(showCredits))
+        
+        navigationItem.rightBarButtonItems = [refreshButton, searchButton]
         
         let urlString: String
             
@@ -35,6 +44,44 @@ class ViewController: UITableViewController {
         showError()
     }
     
+    
+    @objc func refreshPage() {
+        filteredItems = petitions
+        tableView.reloadData()
+    }
+    
+    @objc func searchPetition() {
+        let ac = UIAlertController(title: "Search", message: "Search the petition you want", preferredStyle: .alert)
+        ac.addTextField()
+        
+        let searchAction = UIAlertAction(title: "Search", style: .default) {
+            [weak self, weak ac] _ in
+            guard let searchQuery = ac?.textFields?[0].text else { return }
+            self?.search(searchQuery)
+        }
+        ac.addAction(searchAction)
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(ac, animated: true)
+    }
+    
+    func search(_ searchString: String) {
+        filteredItems.removeAll()
+        for item in petitions {
+            if item.title.contains(searchString) || item.body.contains(searchString) {
+                filteredItems.append(item)
+                tableView.reloadData()
+            }
+        }
+    }
+    
+    @objc func showCredits() {
+        let ac = UIAlertController(title: "Credits", message: "The API is from the Petitions of Whitehouse", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
+    
+    
     func showError() {
         let ac = UIAlertController(title: "Error", message: "There is something wrong", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
@@ -46,17 +93,18 @@ class ViewController: UITableViewController {
         
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
+            filteredItems = petitions
             tableView.reloadData()
         }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return petitions.count
+        return filteredItems.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let petition = petitions[indexPath.row]
+        let petition = filteredItems[indexPath.row]
         cell.textLabel?.text = petition.title
         cell.detailTextLabel?.text = petition.body
         return cell
@@ -64,7 +112,7 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailViewController()
-        vc.detailItem = petitions[indexPath.row]
+        vc.detailItem = filteredItems[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
 
