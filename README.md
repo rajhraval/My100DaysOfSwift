@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Eight - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
+- [Project Eight - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 
 ### :clipboard: Topics
 
@@ -71,6 +71,7 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 - Day 35 - [Project Seven - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%207%20-%20WPetitions/Project7.md)
 - Day 36 - [Project Eight - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 - Day 37 - [Project Eight - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
+- Day 38 - [Project Eight - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 
 
 

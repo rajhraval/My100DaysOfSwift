@@ -18,3 +18,24 @@ Today I did (adding targets to button, joining/seperating strings, hiding views)
 - Loading the level via a text file and adding button targets
 - It's play time using the ```firstIndex(of: )``` and ```joined()``` method
 - Using property observer method ```didSet```
+
+
+**Project 8 - Day Three - Day 38 of 100DaysOfSwift**
+
+> The fool doth think he is wise, but the wise man knows himself to be a fool. - William Shakespeare
+
+Today I completed the challenges:
+
+- Added the thing grey line to the buttons
+- Added an Alert Controller to prompt the answer is wrong to user.
+- Bug yet to fixed
+
+**Project 8 - Summary**
+
+I learnt about (String Methods):
+
+- addTarget()
+- enumerated()
+- joined()
+- replacingOccurences()
+

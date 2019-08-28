@@ -107,7 +107,7 @@ class ViewController: UIViewController {
             buttonsView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             buttonsView.topAnchor.constraint(equalTo: submit.bottomAnchor, constant: 20),
             buttonsView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20)
-                
+            
             ])
         
         let width = 150
@@ -124,20 +124,22 @@ class ViewController: UIViewController {
                 letterButton.frame = frame
                 
                 buttonsView.addSubview(letterButton)
+                buttonsView.layer.borderWidth = 1
+                buttonsView.layer.borderColor = UIColor.gray.cgColor
                 letterButtons.append(letterButton)
             }
         }
         
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         loadLevel()
     }
-
-
+    
+    
     @objc func letterTapped(_ sender: UIButton) {
         guard let buttonTitle = sender.titleLabel?.text else { return }
         currentAnswer.text = currentAnswer.text?.appending(buttonTitle)
@@ -162,6 +164,11 @@ class ViewController: UIViewController {
                 let ac = UIAlertController(title: "Well Done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's Go", style: .default, handler: levelUp))
                 present(ac, animated: true)
+            } else {
+                let ac = UIAlertController(title: "No, You are wrong!", message: "The answer is incorrect", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Next", style: .default, handler: nil))
+                present(ac, animated: true)
+                score -= 1
             }
         }
     }
@@ -218,8 +225,9 @@ class ViewController: UIViewController {
         cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
         answersLabel.text = solutionString.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        letterButtons.shuffle()
-        if letterButtons.count == letterBits.count {
+        letterBits.shuffle()
+        
+        if letterBits.count == letterButtons.count {
             for i in 0..<letterButtons.count {
                 letterButtons[i].setTitle(letterBits[i], for: .normal)
             }
