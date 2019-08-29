@@ -28,7 +28,7 @@ Today I completed the challenges:
 
 - Added the thing grey line to the buttons
 - Added an Alert Controller to prompt the answer is wrong to user.
-- Bug yet to fixed
+- Deducting Score and passing to the new level after all clues are solved and answered correctly.
 
 **Project 8 - Summary**
 

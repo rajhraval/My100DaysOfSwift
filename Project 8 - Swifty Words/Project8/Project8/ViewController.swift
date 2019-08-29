@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         }
     }
     var level = 1
+    var correctAnswers = 0
     
     override func loadView() {
         view = UIView()
@@ -118,7 +119,6 @@ class ViewController: UIViewController {
                 let letterButton = UIButton(type: .system)
                 letterButton.titleLabel?.font = UIFont.systemFont(ofSize: 36)
                 letterButton.setTitle("WWW", for: .normal)
-                letterButton.addTarget(self, action: #selector(letterTapped), for: .touchUpInside)
                 
                 let frame = CGRect(x: column * width, y: row * height, width: width, height: height)
                 letterButton.frame = frame
@@ -127,18 +127,17 @@ class ViewController: UIViewController {
                 buttonsView.layer.borderWidth = 1
                 buttonsView.layer.borderColor = UIColor.gray.cgColor
                 letterButtons.append(letterButton)
+                
+                letterButton.addTarget(self, action: #selector(letterTapped), for: .touchUpInside)
             }
         }
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         loadLevel()
     }
-    
     
     @objc func letterTapped(_ sender: UIButton) {
         guard let buttonTitle = sender.titleLabel?.text else { return }
@@ -153,30 +152,39 @@ class ViewController: UIViewController {
         
         if let solutionPosition = solutions.firstIndex(of: answerText) {
             activatedButtons.removeAll()
+            
             var splitAnswers = answersLabel.text?.components(separatedBy: "\n")
-            splitAnswers?[solutionPosition] =  answerText
+            splitAnswers?[solutionPosition] = answerText
             answersLabel.text = splitAnswers?.joined(separator: "\n")
             
             currentAnswer.text = ""
             score += 1
+            correctAnswers += 1
             
-            if score % 7 == 0 {
-                let ac = UIAlertController(title: "Well Done!", message: "Are you ready for the next level?", preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "Let's Go", style: .default, handler: levelUp))
+            if correctAnswers % 7 == 0 {
+                let ac = UIAlertController(title: "Awesome!", message: "Want to try the next level?", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Next Level", style: .default, handler: levelUp))
                 present(ac, animated: true)
-            } else {
-                let ac = UIAlertController(title: "No, You are wrong!", message: "The answer is incorrect", preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "Next", style: .default, handler: nil))
-                present(ac, animated: true)
-                score -= 1
             }
+        } else {
+            let ac = UIAlertController(title: "Oops!", message: "Your answer is wrong.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Retry", style: .default){
+                [weak self] _ in
+                self?.currentAnswer.text = ""
+                for button in self!.activatedButtons {
+                    button.isHidden = false
+                }
+                self?.activatedButtons.removeAll()
+                self?.score -= 1
+            })
+            present(ac, animated: true)
         }
     }
     
     func levelUp(action: UIAlertAction) {
         level += 1
-        
         solutions.removeAll(keepingCapacity: true)
+        
         loadLevel()
         
         for button in letterButtons {
@@ -213,15 +221,13 @@ class ViewController: UIViewController {
                     
                     let solutionWord = answer.replacingOccurrences(of: "|", with: "")
                     solutionString += "\(solutionWord.count) letters\n"
-                    solutions.append(solutionString)
+                    solutions.append(solutionWord)
                     
                     let bits = answer.components(separatedBy: "|")
                     letterBits += bits
-                    
                 }
             }
         }
-        
         cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
         answersLabel.text = solutionString.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -232,7 +238,6 @@ class ViewController: UIViewController {
                 letterButtons[i].setTitle(letterBits[i], for: .normal)
             }
         }
-        
     }
     
 }

@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1A66DC2317CAC100DEABF7 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF1A66DA2317CAC100DEABF7 /* level2.txt */; };
+		CF1A66DD2317CAC100DEABF7 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF1A66DB2317CAC100DEABF7 /* level1.txt */; };
 		CF3E0C862314189B00361691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E0C852314189B00361691 /* AppDelegate.swift */; };
 		CF3E0C882314189B00361691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E0C872314189B00361691 /* ViewController.swift */; };
 		CF3E0C8B2314189B00361691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3E0C892314189B00361691 /* Main.storyboard */; };
 		CF3E0C8D2314189C00361691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3E0C8C2314189C00361691 /* Assets.xcassets */; };
 		CF3E0C902314189C00361691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3E0C8E2314189C00361691 /* LaunchScreen.storyboard */; };
-		CF9A67CC2316C47F00138852 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF9A67CA2316C47F00138852 /* level1.txt */; };
-		CF9A67CD2316C47F00138852 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF9A67CB2316C47F00138852 /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1A66DA2317CAC100DEABF7 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		CF1A66DB2317CAC100DEABF7 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		CF3E0C822314189B00361691 /* Project8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3E0C852314189B00361691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF3E0C872314189B00361691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +26,6 @@
 		CF3E0C8C2314189C00361691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF3E0C8F2314189C00361691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3E0C912314189C00361691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF9A67CA2316C47F00138852 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
-		CF9A67CB2316C47F00138852 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				CF3E0C8C2314189C00361691 /* Assets.xcassets */,
 				CF3E0C8E2314189C00361691 /* LaunchScreen.storyboard */,
 				CF3E0C912314189C00361691 /* Info.plist */,
-				CF9A67CA2316C47F00138852 /* level1.txt */,
-				CF9A67CB2316C47F00138852 /* level2.txt */,
+				CF1A66DB2317CAC100DEABF7 /* level1.txt */,
+				CF1A66DA2317CAC100DEABF7 /* level2.txt */,
 			);
 			path = Project8;
 			sourceTree = "<group>";
@@ -128,10 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF9A67CD2316C47F00138852 /* level2.txt in Resources */,
+				CF1A66DD2317CAC100DEABF7 /* level1.txt in Resources */,
 				CF3E0C902314189C00361691 /* LaunchScreen.storyboard in Resources */,
-				CF9A67CC2316C47F00138852 /* level1.txt in Resources */,
 				CF3E0C8D2314189C00361691 /* Assets.xcassets in Resources */,
+				CF1A66DC2317CAC100DEABF7 /* level2.txt in Resources */,
 				CF3E0C8B2314189B00361691 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
