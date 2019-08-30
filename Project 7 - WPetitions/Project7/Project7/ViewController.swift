@@ -25,8 +25,16 @@ class ViewController: UITableViewController {
         
         navigationItem.rightBarButtonItems = [refreshButton, searchButton]
         
+        performSelector(inBackground: #selector(fetchJSON), with: nil)
+        
+        performSelector(inBackground: #selector(search(_:)), with: nil)
+        
+    }
+    
+    @objc func fetchJSON() {
+        
         let urlString: String
-            
+        
         if navigationController?.tabBarItem.tag == 0 {
             urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
         } else {
@@ -41,9 +49,9 @@ class ViewController: UITableViewController {
             }
         }
         
-        showError()
+        performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
+        
     }
-    
     
     @objc func refreshPage() {
         filteredItems = petitions
@@ -61,16 +69,16 @@ class ViewController: UITableViewController {
         }
         ac.addAction(searchAction)
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        
         present(ac, animated: true)
     }
     
-    func search(_ searchString: String) {
+    
+    @objc func search(_ searchString: String) {
         filteredItems.removeAll()
         for item in petitions {
             if item.title.contains(searchString) || item.body.contains(searchString) {
                 filteredItems.append(item)
-                tableView.reloadData()
+                tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
             }
         }
     }
@@ -82,7 +90,7 @@ class ViewController: UITableViewController {
     }
     
     
-    func showError() {
+    @objc func showError() {
         let ac = UIAlertController(title: "Error", message: "There is something wrong", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
@@ -94,7 +102,9 @@ class ViewController: UITableViewController {
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
             filteredItems = petitions
-            tableView.reloadData()
+            tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        } else {
+            performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
         }
     }
 

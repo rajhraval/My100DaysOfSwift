@@ -27,6 +27,8 @@ class ViewController: UITableViewController {
         
         performSelector(inBackground: #selector(fetchJSON), with: nil)
         
+        performSelector(inBackground: #selector(search), with: nil)
+        
     }
     
     @objc func fetchJSON() {
@@ -70,12 +72,12 @@ class ViewController: UITableViewController {
         present(ac, animated: true)
     }
     
-    func search(_ searchString: String) {
+    @objc func search(_ searchString: String) {
         filteredItems.removeAll()
         for item in petitions {
             if item.title.contains(searchString) || item.body.contains(searchString) {
                 filteredItems.append(item)
-                tableView.reloadData()
+                tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
             }
         }
     }

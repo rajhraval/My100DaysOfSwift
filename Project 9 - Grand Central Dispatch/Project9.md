@@ -11,3 +11,19 @@ Today I did (Grand Central Dispatch, Quality of Service, Queues, perform Selecto
 - ```async()``` process
 - Dispatch Queue and Quality of Service
 - performSelector methods
+
+**Project 9 - Day Two - Day 40 of 100DaysOfSwift**
+
+Today I completed the challenges:
+
+- I completed the Challengene for Project 1 - Loading the Images in Background
+- I completed the Challenge for Project 8 - Loading the Level in Background and UI in the Main Thread
+- I completed the Challenge for Project 7 - Filtering the Search String in Background
+
+**Project 9 - Summary**
+
+I learnt about:
+
+- Grand Central Dispatch
+- Dispatch Queue and QoS (Quality of Service)
+- performSelector()

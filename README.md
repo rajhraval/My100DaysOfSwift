@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Nine - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%209%20-%20Grand%20Central%20Dispatch/Project9.md)
+- [Project Nine - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%209%20-%20Grand%20Central%20Dispatch/Project9.md)
 
 ### :clipboard: Topics
 
@@ -66,6 +66,8 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 
 **Codable, Buttons and GCD (Grand Central Dispatch)**
 
+This mainly covers the fundamentals of - Downloading JSON with Data, Codable Protocol, UITabBarController, UIStoryboard, String Functions (addTarget(), enumerated(), joined(), replacingOccurences() ), GCD, DispatchQueue and Quality of Service(QoS) and performSelector()
+
 - Day 33 - [Project Seven - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%207%20-%20WPetitions/Project7.md)
 - Day 34 - [Project Seven - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%207%20-%20WPetitions/Project7.md)
 - Day 35 - [Project Seven - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%207%20-%20WPetitions/Project7.md)
@@ -73,6 +75,7 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 - Day 37 - [Project Eight - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 - Day 38 - [Project Eight - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 - Day 39 - [Project Nine - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md))
+- Day 40 - [Project Nine - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md))
 
 
 
