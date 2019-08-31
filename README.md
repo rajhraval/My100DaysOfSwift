@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone Project - IV]()
+- [Milestone Project - III]()
 
 ### :clipboard: Topics
 
@@ -62,7 +62,7 @@ This mainly covers the fundamentals of - loadView(), WKWebView, Delegation, URL,
 
 **Consolidation Three**
 
-- Day 32 - [Milestone Project - III](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%204-6/milestone2.md)
+- Day 32 - [Milestone Project - II](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%204-6/milestone2.md)
 
 **Codable, Buttons and GCD (Grand Central Dispatch)**
 
@@ -79,7 +79,7 @@ This mainly covers the fundamentals of - Downloading JSON with Data, Codable Pro
 
 **Consolidation Four**
 
-- Day 41 - [Milestone Project - IV]()
+- Day 41 - [Milestone Project - III]()
 
 ### :books: Blogs 
 
