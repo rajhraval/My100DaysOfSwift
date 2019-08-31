@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Nine - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%209%20-%20Grand%20Central%20Dispatch/Project9.md)
+- [Milestone Project - IV]()
 
 ### :clipboard: Topics
 
@@ -77,7 +77,9 @@ This mainly covers the fundamentals of - Downloading JSON with Data, Codable Pro
 - Day 39 - [Project Nine - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 - Day 40 - [Project Nine - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%208%20-%20Swifty%20Words/Project8.md)
 
+**Consolidation Four**
 
+- Day 41 - [Milestone Project - IV]()
 
 ### :books: Blogs 
 
