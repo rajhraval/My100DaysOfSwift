@@ -6,7 +6,8 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone Project - IV]()
+- [Milestone Project - IV]() in (Working Phase)
+- [Project Ten - Part One]()
 
 ### :clipboard: Topics
 
@@ -79,7 +80,11 @@ This mainly covers the fundamentals of - Downloading JSON with Data, Codable Pro
 
 **Consolidation Four**
 
-- Day 41 - [Milestone Project - IV]()
+- Day 41 - [Milestone Project - IV]() (In Working Progress)
+
+**A Whole New World**
+
+- Day 42 - [Project Ten - Part One]()
 
 ### :books: Blogs 
 
