@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1C7BC4231D350800220065 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1C7BC3231D350800220065 /* Person.swift */; };
 		CF2B2810231B91B900D35EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B280F231B91B900D35EC1 /* AppDelegate.swift */; };
 		CF2B2812231B91B900D35EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B2811231B91B900D35EC1 /* ViewController.swift */; };
 		CF2B2815231B91B900D35EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B2813231B91B900D35EC1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1C7BC3231D350800220065 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CF2B280C231B91B900D35EC1 /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2B280F231B91B900D35EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF2B2811231B91B900D35EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				CF2B280F231B91B900D35EC1 /* AppDelegate.swift */,
 				CF2B2811231B91B900D35EC1 /* ViewController.swift */,
+				CF1C7BC3231D350800220065 /* Person.swift */,
 				CF2B2813231B91B900D35EC1 /* Main.storyboard */,
 				CF2B2821231B937F00D35EC1 /* PersonCell.swift */,
 				CF2B2816231B91BA00D35EC1 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				CF2B2822231B937F00D35EC1 /* PersonCell.swift in Sources */,
 				CF2B2812231B91B900D35EC1 /* ViewController.swift in Sources */,
+				CF1C7BC4231D350800220065 /* Person.swift in Sources */,
 				CF2B2810231B91B900D35EC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
