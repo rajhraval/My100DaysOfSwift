@@ -45,6 +45,10 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.delegate = self
+//        For Camera
+//        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+//            picker.sourceType = .camera
+//        }
         present(picker, animated: true)
     }
     
@@ -73,13 +77,19 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let person = people[indexPath.item]
         
-        let ac = UIAlertController(title: "Rename Photo", message: nil, preferredStyle: .alert)
+        let ac = UIAlertController(title: "Edit Photo", message: "What you want to do with it?", preferredStyle: .alert)
         ac.addTextField()
         
         ac.addAction(UIAlertAction(title: "Rename", style: .default) {
             [weak self, weak ac] _ in
             guard let newName = ac?.textFields?[0].text else { return }
             person.name = newName
+            self?.collectionView.reloadData()
+        })
+        
+        ac.addAction(UIAlertAction(title: "Delete", style: .destructive){
+            [weak self] _ in
+            self?.people.remove(at: indexPath.item)
             self?.collectionView.reloadData()
         })
         

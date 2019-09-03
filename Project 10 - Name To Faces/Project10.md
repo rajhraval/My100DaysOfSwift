@@ -19,3 +19,23 @@ Today I did (UIImagePickerController, NSObject):
 - Importing Images from UIImagePickerController and getting image path using ```getDocumentsDirectory()```
 - Custom Subclass of NSObjects
 - Renaming the name of images
+
+**Project 10 - Day Three - Day 44 of 100DaysOfSwift**
+
+> The results you achieve will be in direct proportion to the effort you apply. - Denis Waitley
+
+Today I completed the challenges:
+
+- Adding a delete action to alert controller
+- Adding camera picker to the app to choose pictures by clicking on camera
+- Converting Project 1 - Table View into Collection View
+
+**Project 10 - Summary**
+
+I learnt about:
+
+- UICollectionViewController
+- UIImagePickerController
+- UUID (Universally Unique Identifier)
+- NSObject Subclasses
+- fatalError()
