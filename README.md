@@ -7,7 +7,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 ### :pushpin: What's New Today? 
 
 - [Milestone Project - IV]() in Working Phase
-- [Project Ten - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2010%20-%20Name%20To%20Faces/Project10.md)
+- [Project Eleven - Part One]()
 
 ### :clipboard: Topics
 
@@ -87,6 +87,7 @@ This mainly covers the fundamentals of - Downloading JSON with Data, Codable Pro
 - Day 42 - [Project Ten - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2010%20-%20Name%20To%20Faces/Project10.md)
 - Day 43 - [Project Ten - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2010%20-%20Name%20To%20Faces/Project10.md)
 - Day 44 - [Project Ten - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2010%20-%20Name%20To%20Faces/Project10.md)
+- Day 45 - [Project Eleven - Part One]()
 
 ### :books: Blogs 
 

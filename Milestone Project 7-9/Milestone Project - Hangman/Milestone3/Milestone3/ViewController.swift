@@ -10,7 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var wordLabel: UILabel!
+    var scoreLabel: UILabel!
+    var letterButtons = [UIButton]()
     
+    var score = 0
+    
+    override func loadView() {
+        <#code#>
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
