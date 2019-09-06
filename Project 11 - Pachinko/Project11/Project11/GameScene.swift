@@ -29,6 +29,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    var boxes = [SKSpriteNode]()
+    var balls = [SKSpriteNode]()
+    
+    var ballLimitLabel: SKLabelNode!
+    var ballLimit = 5 {
+        didSet {
+            ballLimitLabel.text = "Balls Left: \(ballLimit)"
+        }
+    }
+    
+    var resetLabel: SKLabelNode!
+    
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "background")
         background.position = CGPoint(x: 512, y: 384)
@@ -42,10 +54,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.position = CGPoint(x: 980, y: 700)
         addChild(scoreLabel)
         
+        ballLimitLabel = SKLabelNode(fontNamed: "Chalkduster")
+        ballLimitLabel.text = "Balls Left: 5"
+        ballLimitLabel.horizontalAlignmentMode = .center
+        ballLimitLabel.position = CGPoint(x: 512, y: 700)
+        addChild(ballLimitLabel)
+        
         editLabel = SKLabelNode(fontNamed: "Chalkduster")
         editLabel.text = "Edit"
         editLabel.position = CGPoint(x: 80, y: 700)
         addChild(editLabel)
+        
+        resetLabel = SKLabelNode(fontNamed: "Chalkduster")
+        resetLabel.text = "Reset"
+        resetLabel.position = CGPoint(x: 80, y: 650)
+        addChild(resetLabel)
 
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         
@@ -70,8 +93,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let objects = nodes(at: location)
         
+      
+        
         if objects.contains(editLabel) {
             editingMode.toggle()
+        } else if objects.contains(resetLabel) {
+            removeBoxes()
         } else {
             if editingMode {
                 let size = CGSize(width: Int.random(in: 16...128), height: 16)
@@ -83,15 +110,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
                 box.physicsBody?.isDynamic = false
                 addChild(box)
+                boxes.append(box)
+                
                 
             } else {
-                let ball = SKSpriteNode(imageNamed: "ballRed")
+                let ballColor = ["ballRed", "ballYellow", "ballGreen", "ballBlue", "ballCyan", "ballPurple", "ballGrey"]
+                
+                let ball = SKSpriteNode(imageNamed: ballColor.randomElement()!)
                 ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
                 ball.physicsBody?.restitution = 0.4
                 ball.physicsBody?.contactTestBitMask = ball.physicsBody?.collisionBitMask ?? 0
-                ball.position = location
+                ball.position = CGPoint(x: Int.random(in: 180...900), y: 650)
                 ball.name = "ball"
                 addChild(ball)
+                balls.append(ball)
             }
         }
         
@@ -138,13 +170,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if object.name == "good" {
             destroy(ball: ball)
             score += 1
+            ballLimit += 1
         } else if object.name == "bad" {
             destroy(ball: ball)
             score -= 1
+            ballLimit -= 1
+            if ballLimit == 0 {
+                removeBoxes()
+            }
         }
     }
     
     func destroy(ball: SKNode) {
+        if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
+            fireParticles.position = ball.position
+            addChild(fireParticles)
+        }
         ball.removeFromParent()
     }
     
@@ -158,6 +199,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         } else if nodeB.name == "ball" {
             collision(between: nodeB, object: nodeA)
         }
+    }
+    
+    func removeBoxes() {
+        for box in boxes {
+            box.removeFromParent()
+        }
+        
+        for ball in balls {
+            ball.removeFromParent()
+        }
+        
+        score = 0
+        editingMode = false
+        ballLimit = 5
     }
     
 }
