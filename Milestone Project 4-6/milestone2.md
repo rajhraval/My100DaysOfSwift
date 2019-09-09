@@ -23,3 +23,4 @@ Basically, it was revision of the previous project modules which covers
 - Visual Formatting Language in AutoLayout
 - Anchors in AutoLayout.
 
+**That's All for Day 32 of 100DaysOfSwift!**

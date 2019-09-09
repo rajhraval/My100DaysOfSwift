@@ -7,7 +7,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 ### :pushpin: What's New Today? 
 
 - [Milestone Project - IV]() in Working Phase
-- [Project Twelve - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2012%20-%20UserDefaults/Project12.md)
+- [Milestone Project -V]()
 
 ### :clipboard: Topics
 
@@ -94,6 +94,10 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 - Day 47 - [Project Eleven - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2011%20-%20Pachinko/Project11.md)
 - Day 48 - [Project Twelve - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2012%20-%20UserDefaults/Project12.md)
 - Day 49 - [Project Twelve - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2012%20-%20UserDefaults/Project12.md)
+
+**Consolidation Five**
+
+- Day 50 - [Milestone Project - V]()
 
 ### :books: Blogs 
 
