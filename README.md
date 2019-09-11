@@ -7,7 +7,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 ### :pushpin: What's New Today? 
 
 - [Milestone Project - IV]() in Working Phase
-- [Project Thirteen - Part One]()
+- [Project Thirteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2013%20-%20Instafilter/Project13.md)
 
 ### :clipboard: Topics
 
@@ -102,7 +102,7 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 
 **Images and Animations**
 
-- Day 52 - [Project Thirteen - Part One]()
+- Day 52 - [Project Thirteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2013%20-%20Instafilter/Project13.md)
 
 ### :books: Blogs 
 
