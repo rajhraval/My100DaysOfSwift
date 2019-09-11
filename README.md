@@ -7,7 +7,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 ### :pushpin: What's New Today? 
 
 - [Milestone Project - IV]() in Working Phase
-- [Expanding your Horizons](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day51.md)
+- [Project Thirteen - Part One]()
 
 ### :clipboard: Topics
 
@@ -99,6 +99,10 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 
 - Day 50 - [Milestone Project - V](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2010-12/milestone4.md)
 - Day 51 - [Expanding your Horizons](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day51.md)
+
+**Images and Animations**
+
+- Day 52 - [Project Thirteen - Part One]()
 
 ### :books: Blogs 
 
