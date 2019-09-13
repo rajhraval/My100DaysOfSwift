@@ -13,6 +13,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var intensity: UISlider!
+    @IBOutlet var radius: UISlider!
+    @IBOutlet var scale: UISlider!
+    @IBOutlet var changeFilter: UIButton!
     var currentImage: UIImage!
     
     var context: CIContext!
@@ -23,6 +26,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Do any additional setup after loading the view.
         title = "Instafilter"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(importPicture))
+        
+        intensity.isEnabled = false
+        radius.isEnabled = false
+        scale.isEnabled = false
         
         context = CIContext()
         currentFilter = CIFilter(name: "CISepiaTone")
@@ -63,6 +70,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
 
         present(ac, animated: true)
+        
     }
     
     func setFilter(action: UIAlertAction) {
@@ -71,17 +79,34 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         currentFilter = CIFilter(name: actionTitle)
         
+        changeFilter.setTitle(actionTitle, for: .normal)
+        
         let beginImage = CIImage(image: currentImage)
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
         applyProcessing()
     }
     
     @IBAction func save(_ sender: Any) {
-        guard let image = imageView.image else { return }
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishingSavingWithError:contextInfo:)), nil)
+        if let image = imageView.image {
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishingSavingWithError:contextInfo:)), nil)
+        } else {
+            let ac = UIAlertController(title: "Image Not Found", message: "Import image from your gallery.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
     }
     
     @IBAction func intensityChanged(_ sender: Any) {
+        applyProcessing()
+    }
+    
+    
+    @IBAction func radiusChanged(_ sender: Any) {
+        applyProcessing()
+    }
+    
+    
+    @IBAction func scaleChanged(_ sender: Any) {
         applyProcessing()
     }
     
@@ -90,18 +115,45 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         if inputKeys.contains(kCIInputIntensityKey) {
             currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)
+            intensity.isEnabled = true
+            radius.isEnabled = false
+            scale.isEnabled = false
+        }
+        
+        if inputKeys.contains(kCIInputIntensityKey) && inputKeys.contains(kCIInputRadiusKey) {
+            currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)
+            intensity.isEnabled = true
+            currentFilter.setValue(radius.value * 200, forKey: kCIInputRadiusKey)
+            radius.isEnabled = true
+            scale.isEnabled = false
         }
         
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(intensity.value * 200, forKey: kCIInputRadiusKey)
+            currentFilter.setValue(radius.value * 200, forKey: kCIInputRadiusKey)
+            radius.isEnabled = true
+            intensity.isEnabled = false
+            scale.isEnabled = false
+        }
+        
+        if inputKeys.contains(kCIInputScaleKey) && inputKeys.contains(kCIInputRadiusKey) {
+            currentFilter.setValue(radius.value * 200, forKey: kCIInputRadiusKey)
+            radius.isEnabled = true
+            currentFilter.setValue(scale.value * 10, forKey: kCIInputScaleKey)
+            scale.isEnabled = true
         }
         
         if inputKeys.contains(kCIInputScaleKey) {
-            currentFilter.setValue(intensity.value * 10, forKey: kCIInputScaleKey)
+            currentFilter.setValue(scale.value * 10, forKey: kCIInputScaleKey)
+            scale.isEnabled = true
+            intensity.isEnabled = false
+            radius.isEnabled = false
         }
         
         if inputKeys.contains(kCIInputCenterKey) {
             currentFilter.setValue(CIVector(x: currentImage.size.width / 2, y: currentImage.size.height / 2), forKey: kCIInputCenterKey)
+            radius.isEnabled = true
+            intensity.isEnabled = false
+            scale.isEnabled = false
         }
         
         guard let outputImage = currentFilter.outputImage else { return }
