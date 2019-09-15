@@ -17,6 +17,8 @@
 		CF0CC412232D26DF00EE92D1 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = CF0CC410232D26DF00EE92D1 /* whack.caf */; };
 		CF0CC413232D26E000EE92D1 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = CF0CC411232D26DF00EE92D1 /* whackBad.caf */; };
 		CF0CC415232D292700EE92D1 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0CC414232D292700EE92D1 /* WhackSlot.swift */; };
+		CF7C8B31232E151C00F8CC41 /* smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8B30232E151C00F8CC41 /* smoke.sks */; };
+		CF7C8B36232E165700F8CC41 /* mud.sks in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8B34232E165700F8CC41 /* mud.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CF0CC410232D26DF00EE92D1 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 		CF0CC411232D26DF00EE92D1 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
 		CF0CC414232D292700EE92D1 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		CF7C8B30232E151C00F8CC41 /* smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoke.sks; sourceTree = "<group>"; };
+		CF7C8B34232E165700F8CC41 /* mud.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = mud.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				CF0CC3F8232D25F300EE92D1 /* AppDelegate.swift */,
-				CF0CC3FA232D25F300EE92D1 /* GameScene.sks */,
-				CF0CC3FE232D25F300EE92D1 /* GameScene.swift */,
 				CF0CC400232D25F300EE92D1 /* GameViewController.swift */,
 				CF0CC414232D292700EE92D1 /* WhackSlot.swift */,
+				CF0CC3FE232D25F300EE92D1 /* GameScene.swift */,
+				CF0CC3FA232D25F300EE92D1 /* GameScene.sks */,
+				CF7C8B30232E151C00F8CC41 /* smoke.sks */,
+				CF7C8B34232E165700F8CC41 /* mud.sks */,
 				CF0CC402232D25F300EE92D1 /* Main.storyboard */,
 				CF0CC405232D25F400EE92D1 /* Assets.xcassets */,
 				CF0CC407232D25F400EE92D1 /* LaunchScreen.storyboard */,
@@ -140,9 +146,11 @@
 				CF0CC404232D25F300EE92D1 /* Main.storyboard in Resources */,
 				CF0CC412232D26DF00EE92D1 /* whack.caf in Resources */,
 				CF0CC3FB232D25F300EE92D1 /* GameScene.sks in Resources */,
+				CF7C8B36232E165700F8CC41 /* mud.sks in Resources */,
 				CF0CC406232D25F400EE92D1 /* Assets.xcassets in Resources */,
 				CF0CC409232D25F400EE92D1 /* LaunchScreen.storyboard in Resources */,
 				CF0CC413232D26E000EE92D1 /* whackBad.caf in Resources */,
+				CF7C8B31232E151C00F8CC41 /* smoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
