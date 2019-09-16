@@ -1,0 +1,13 @@
+## Project 15 - HackingWithSwift - 100DaysOfSwift Challenge
+
+**Project 15 - Day One - Day 57 of 100DaysOfSwift**
+
+> Design used to be the seasoning you’d sprinkle on for taste; now it’s the flour you need at the start of the recipe. - John Maeda
+
+Today I did(animate(duration: ), CGAffineTransform, alpha):
+
+- Setting up the project in Xcode
+- Preparing for action, adding button and image
+- Switch case and animation method
+- CGAffineTransform methods (transform, translation and more)
+

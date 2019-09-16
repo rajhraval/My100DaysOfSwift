@@ -7,7 +7,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 ### :pushpin: What's New Today? 
 
 - [Milestone Project - IV]() in Working Phase
-- [Project Fourteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2014%20-%20Whack-a-Penguin/Project14.md)
+- [Project Fifteen - Part One]()
 
 ### :clipboard: Topics
 
@@ -107,6 +107,7 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 - Day 54 - [Project Thirteen - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2013%20-%20Instafilter/Project13.md)
 - Day 55 - [Project Fourteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2014%20-%20Whack-a-Penguin/Project14.md)
 - Day 56 - [Project Fourteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2014%20-%20Whack-a-Penguin/Project14.md)
+- Day 57 - [Project Fifteen - Part One]()
 
 
 
