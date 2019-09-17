@@ -50,9 +50,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 5, options: [], animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        }) { finished in
+            sender.transform = .identity
+            self.checkAnswer(answer: sender.tag)
+        }
+        
+    }
+    
+    func checkAnswer(answer: Int) {
         var title:String
         
-        if sender.tag == correctAnswer {
+        if answer == correctAnswer {
             title = "Correct"
             score += 1
             totalAnswer += 1
@@ -71,11 +82,10 @@ class ViewController: UIViewController {
             title = "Wrong"
             score -= 1
             totalAnswer += 1
-            let rc = UIAlertController(title: title, message: "It is flag of \(countries[sender.tag].uppercased())", preferredStyle: .alert)
+            let rc = UIAlertController(title: title, message: "It is flag of \(countries[answer].uppercased())", preferredStyle: .alert)
             rc.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
             present(rc, animated: true)
         }
-        
     }
     
     @objc func showScore() {

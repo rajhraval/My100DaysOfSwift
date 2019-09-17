@@ -36,6 +36,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 1) {
+            self.imageView.alpha = 1
+        }
+    }
+    
     @objc func importPicture() {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
@@ -47,6 +54,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         guard let image = info[.editedImage] as? UIImage else { return }
         dismiss(animated: true)
         currentImage = image
+        imageView.alpha = 0
         
         let beginImage = CIImage(image: currentImage)
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
