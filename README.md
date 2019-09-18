@@ -7,7 +7,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 ### :pushpin: What's New Today? 
 
 - [Milestone Project - IV]() in Working Phase
-- [Milestone Project-  VI]()
+- [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md)
 
 ### :clipboard: Topics
 
@@ -112,7 +112,7 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 
 **Consolidation Six**
 
-- Day 59 - [Milestone Project - VI]()
+- Day 59 - [Milestone Project - VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md)
 
 ### :books: Blogs 
 
