@@ -1,0 +1,112 @@
+{
+    "results": [
+        {
+            "id": "1",
+            "country_name": "Estonia",
+            "country_capital": "Tallinn",
+            "country_size": "45,227 sq km",
+            "population": "1,324,820",
+            "currency": "Euro",
+            "fact": "Estonia speaks Estonian...as well as English, Russian, Finnish and German"
+        },
+        {
+            "id": "2",
+            "country_name": "France",
+            "country_capital": "Paris",
+            "country_size": "640,679 sq km",
+            "population": "67,022,000",
+            "currency": "Euro",
+            "fact": "France is the largest country in the EU, and known as ‘The Hexagon’"
+        },
+        {
+            "id": "3",
+            "country_name": "Germany",
+            "country_capital": "Berlin",
+            "country_size": "357,386 sq km",
+            "population": "83,019,200",
+            "currency": "Euro",
+            "fact": "It’s illegal to run out of fuel in the German Autobahn"
+        },
+        {
+            "id": "4",
+            "country_name": "Ireland",
+            "country_capital": "Dublin",
+            "country_size": "70,273 sq km",
+            "population": "4,921,500",
+            "currency": "Euro",
+            "fact": "The earliest evidence of human presence in Ireland is dated at 12,800 BC"
+        },
+        {
+            "id": "5",
+            "country_name": "Italy",
+            "country_capital": "Rome",
+            "country_size": "301,340 sq km",
+            "population": "60,359,546",
+            "currency": "Euro",
+            "fact": "The italian cuisine is spread worldwide"
+        },
+        {
+            "id": "6",
+            "country_name": "Monaco",
+            "country_capital": "Monaco",
+            "country_size": "2.2 sq km",
+            "population": "38,400",
+            "currency": "Euro",
+            "fact": "Monaco does not have its own major defense force."
+        },
+        {
+            "id": "7",
+            "country_name": "Nigeria",
+            "country_capital": "Abuja",
+            "country_size": "923,768 sq km",
+            "population": "200,962,417",
+            "currency": "Naira",
+            "fact": "    While English is the official language, there are over 500 indigenous languages in Nigeria."
+        },
+        {
+            "id": "8",
+            "country_name": "Poland",
+            "country_capital": "Warsaw",
+            "country_size": "312,696 sq km",
+            "population": "38,433,600",
+            "currency": "Polish zloty",
+            "fact": "Poland in the Polish language means Polska, which translates to people living in open fields."
+        },
+        {
+            "id": "9",
+            "country_name": "Russia",
+            "country_capital": "Moscow",
+            "country_size": "17,098,246 sq km",
+            "population": "146,793,744",
+            "currency": "Russian Ruble",
+            "fact": "Russia has more time zones than any other country in the world. It used to have 11, but this was culled in 2010 to ‘only’ nine."
+        },
+        {
+            "id": "10",
+            "country_name": "Spain",
+            "country_capital": "Madrid",
+            "country_size": "505,990 sq km",
+            "population": "46,733,038",
+            "currency": "Euro",
+            "fact": "Spain produces over half of the world’s olive oil."
+        },
+        {
+            "id": "11",
+            "country_name": "United Kingdom",
+            "country_capital": "London",
+            "country_size": "242,495 sq km",
+            "population": "67,545,757",
+            "currency": "Pound sterling",
+            "fact": "The sports soccer, rugby, golf, boxing, and cricket were all invented in the United Kingdom."
+        },
+        {
+            "id": "12",
+            "country_name": "US",
+            "country_capital": "Washington D.C",
+            "country_size": "9,833,520 sq km",
+            "population": "327,167,434",
+            "currency": "United States dollar",
+            "fact": "In 1783, the United States became the first country to gain independence from a European power."
+        }
+    ]
+}
