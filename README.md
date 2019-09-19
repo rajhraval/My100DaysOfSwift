@@ -8,7 +8,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 - [Milestone Project - IV]() in Working Phase
 - [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) in Process
-- [Project Sixteen - Part One]()
+- [Project Sixteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
 
 ### :clipboard: Topics
 
@@ -117,7 +117,7 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 
 **Maps and Bugs**
 
-- Day 60 - [Project Sixteen - Part One]()
+- Day 60 - [Project Sixteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
 
 ### :books: Blogs 
 
