@@ -8,7 +8,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 - [Milestone Project - IV]() in Working Phase
 - [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) in Process
-- [Project Sixteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
+- [Project Sixteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
 
 ### :clipboard: Topics
 
@@ -103,6 +103,8 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 
 **Images and Animations**
 
+This mainly covers the fundamentals of: UISlider, UIImagePickerController, CoreImage, CIContext, CIFilter, SKActionsequences, DispatchQueue AsyncAfter, SKTexture, SKCropNode, Adding Sound in SpriteKit Games, Animations, animate(duration:), CGAffineTransformation and Spring Animations
+
 - Day 52 - [Project Thirteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2013%20-%20Instafilter/Project13.md)
 - Day 53 - [Project Thirteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2013%20-%20Instafilter/Project13.md)
 - Day 54 - [Project Thirteen - Part Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2013%20-%20Instafilter/Project13.md)
@@ -118,6 +120,7 @@ This mainly covers the fundamentals of: UICollectionViewController, UIImagePicke
 **Maps and Bugs**
 
 - Day 60 - [Project Sixteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
+- Day 61 - [Project Sixteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
 
 ### :books: Blogs 
 

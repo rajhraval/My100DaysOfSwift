@@ -21,7 +21,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W98-g7-PiK">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gZz-x0-Yul"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="f6x-sW-VIY"/>
                                 </connections>
                             </mapView>
                         </subviews>
@@ -36,12 +36,27 @@
                     </view>
                     <navigationItem key="navigationItem" id="Oxe-jx-OMX"/>
                     <connections>
-                        <outlet property="mapView" destination="W98-g7-PiK" id="meG-8K-nhl"/>
+                        <outlet property="mapView" destination="W98-g7-PiK" id="Qfb-rK-QXV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.91304347826099" y="774.77678571428567"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="LQR-RH-pRS">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="Kym-M6-g1D" customClass="WebViewController" customModule="Project16" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8p-Pe-Gij">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BFI-dh-14K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNt-Ky-uTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739" y="775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LDl-3d-cTd">

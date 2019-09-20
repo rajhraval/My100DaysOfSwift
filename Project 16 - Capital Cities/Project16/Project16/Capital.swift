@@ -19,4 +19,5 @@ class Capital: NSObject, MKAnnotation {
         self.coordinate = coordinate
         self.info = info
     }
+    
 }

@@ -16,6 +16,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "Capital Cities"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Change Style", style: .plain, target: self, action: #selector(changeMapStyle))
         
         let london = Capital(title: "London", coordinate: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), info: "Home to 2012 Summer Olympics")
         let oslo = Capital(title: "Oslo", coordinate: CLLocationCoordinate2D(latitude: 59.95, longitude: 10.75), info: "Founded over a 1000 years ago")
@@ -31,9 +35,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         let identifier = "Capital"
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.pinTintColor = .green
             annotationView?.canShowCallout = true
             
             let btn = UIButton(type: .detailDisclosure)
@@ -48,11 +53,40 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let capital = view.annotation as? Capital else { return }
         
-        let placeName = capital.title
-        let placeInfo = capital.info
-        
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "WebView") as? WebViewController {
+            vc.city = capital.title
+            navigationController?.pushViewController(vc, animated: true)
+        }
+
+    }
+    
+    @objc func changeMapStyle() {
+        let ac = UIAlertController(title: "Change Map Style", message: "What kind of view you want for your map?", preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "Standard", style: .default) {
+            [weak self] _ in
+            self?.mapView.mapType = .standard
+        })
+        ac.addAction(UIAlertAction(title: "Muted Standard", style: .default) {
+            [weak self] _ in
+            self?.mapView.mapType = .mutedStandard
+        })
+        ac.addAction(UIAlertAction(title: "Satellite", style: .default) {
+            [weak self] _ in
+            self?.mapView.mapType = .satellite
+        })
+        ac.addAction(UIAlertAction(title: "Satellite Flyover", style: .default) {
+            [weak self] _ in
+            self?.mapView.mapType = .satelliteFlyover
+        })
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default) {
+            [weak self] _ in
+            self?.mapView.mapType = .hybrid
+        })
+        ac.addAction(UIAlertAction(title: "Hybrid Flyover", style: .default) {
+            [weak self] _ in
+            self?.mapView.mapType = .hybridFlyover
+        })
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac, animated: true)
     }
 
