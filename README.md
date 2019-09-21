@@ -8,7 +8,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 - [Milestone Project - IV]() in Working Phase
 - [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) in Process
-- [Project Seventeen - Part One]()
+- [Project Seventeen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2017%20-%20Space%20Race/Project17.md)
 
 ### :clipboard: Topics
 
@@ -121,7 +121,7 @@ This mainly covers the fundamentals of: UISlider, UIImagePickerController, CoreI
 
 - Day 60 - [Project Sixteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
 - Day 61 - [Project Sixteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2016%20-%20Capital%20Cities/Project16.md)
-- Day 62 - [Project Seventeen - Part One]()
+- Day 62 - [Project Seventeen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2017%20-%20Space%20Race/Project17.md)
 
 ### :books: Blogs 
 
