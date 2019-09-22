@@ -24,6 +24,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             scoreLabel.text = "Score: \(score)"
         }
     }
+    var finalScore = 0
+    var enemyCounter = 0
+    var enemyTime = 1.0
     
     override func didMove(to view: SKView) {
         backgroundColor = .black
@@ -33,6 +36,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         starfield.advanceSimulationTime(10)
         starfield.zPosition = -1
         addChild(starfield)
+        
+        physicsWorld.gravity = .zero
+        physicsWorld.contactDelegate = self
+    
+        startGame()
+    }
+    
+    func startGame() {
+        enemyTime = 1.0
+        enemyCounter = 1
+        isGameOver = false
         
         player = SKSpriteNode(imageNamed: "player")
         player.position = CGPoint(x: 100, y: 384)
@@ -44,14 +58,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.position = CGPoint(x: 16, y: 16)
         scoreLabel.horizontalAlignmentMode = .left
         addChild(scoreLabel)
-        
+
         score = 0
         
-        physicsWorld.gravity = .zero
-        physicsWorld.contactDelegate = self
-        
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.35, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
-        
+        startTimer()
+    }
+    
+    func startTimer() {
+        gameTimer?.invalidate()
+        gameTimer = Timer.scheduledTimer(timeInterval: enemyTime, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -66,7 +81,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    func gameOver() {
+        let explosion = SKEmitterNode(fileNamed: "explosion")!
+        explosion.position = player.position
+        addChild(explosion)
+        finalScore = score
+        
+        player.removeFromParent()
+        isGameOver = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            [weak self] in
+            guard let children = self?.children else { return }
+            for node in children {
+                node.removeFromParent()
+            }
+        }
+    }
+    
     @objc func createEnemy() {
+        guard !isGameOver else { return }
         guard let enemy = possibleEnemies.randomElement() else { return }
         
         let sprite = SKSpriteNode(imageNamed: enemy)
@@ -78,10 +112,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sprite.physicsBody?.linearDamping = 0
         sprite.physicsBody?.angularDamping = 0
         addChild(sprite)
+        enemyCounter += 1
+        
+        if enemyCounter.isMultiple(of: 20) {
+            enemyTime -= 0.1
+            startTimer()
+        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard  let touch = touches.first else { return }
+        guard let touch = touches.first else { return }
         var location = touch.location(in: self)
         
         if location.y < 100 {
@@ -94,13 +134,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        gameOver()
+        alertUser(title: "You Cheated!", message: "You need to startover")
+    }
+    
     func didBegin(_ contact: SKPhysicsContact) {
-        let explosion = SKEmitterNode(fileNamed: "explosion")!
-        explosion.position = player.position
-        addChild(explosion)
-        
-        player.removeFromParent()
-        isGameOver = true
+        gameOver()
+        alertUser(title: "Game Over!", message: "Final Score is \(finalScore)")
+    }
+    
+    func alertUser(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Restart Game", style: .default) {
+            [weak self] _ in
+            self?.startGame()
+        })
+        self.view?.window?.rootViewController?.present(ac, animated: true)
     }
     
 }
