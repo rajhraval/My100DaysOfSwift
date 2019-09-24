@@ -37,7 +37,10 @@ class ViewController: UITableViewController {
         }
         print(pictures)
         
-        tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        assert(selectedImage != nil, "Image is nil!")
         title = "Picture \(selectedImageCount) of 10"
         navigationItem.largeTitleDisplayMode = .never
         
