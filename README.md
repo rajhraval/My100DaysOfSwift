@@ -8,7 +8,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 - [Milestone Project - IV]() in Working Phase
 - [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) in Process
-- [Project Eighteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2018%20-%20Debugging/Project18.md)
+- [Milestone Project VII]()
 
 ### :clipboard: Topics
 
@@ -127,6 +127,10 @@ This mainly covers the fundamentals of: MKMapView, MKAnnotation, CLLocationCoord
 - Day 63 - [Project Seventeen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2017%20-%20Space%20Race/Project17.md)
 - Day 64 - [Project Eighteen - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2018%20-%20Debugging/Project18.md)
 - Day 65 - [Project Eighteen - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2018%20-%20Debugging/Project18.md)
+
+**Consolidation Seven**
+
+- Day 66 - [Milestone Project - VII]()
 
 
 
