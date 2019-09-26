@@ -138,7 +138,7 @@ This mainly covers the fundamentals of: MKMapView, MKAnnotation, CLLocationCoord
 
 **Leveling up**
 
-Day 67 - [Project Nineteen - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
+- Day 67 - [Project Nineteen - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 
 ### :books: Blogs 
 
