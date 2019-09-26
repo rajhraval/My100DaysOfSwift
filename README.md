@@ -6,6 +6,10 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
+- Day 67 - [Project Nineteen - Day One]()
+
+### Pending Milestones
+
 - [Milestone Project - IV]() in Working Phase
 - [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) in Process
 - [Milestone Project VII]()

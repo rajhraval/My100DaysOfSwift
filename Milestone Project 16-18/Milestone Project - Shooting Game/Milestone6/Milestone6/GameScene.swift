@@ -11,7 +11,9 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    var bullets: SKSpriteNode!
+    var bulletsTierOne: SKSpriteNode!
+    var bulletsTierTwo: SKSpriteNode!
+    var cursor: SKSpriteNode!
     
     var bulletTexture = [
         SKTexture(imageNamed: "shots0"),
@@ -20,8 +22,12 @@ class GameScene: SKScene {
         SKTexture(imageNamed: "shots3")
     ]
     
-    
-    
+    var showBullet = 3 {
+        didSet {
+            bulletsTierOne.texture = bulletTexture[showBullet]
+            bulletsTierTwo.texture = bulletTexture[showBullet]
+        }
+    }
     
     var scoreLabel: SKLabelNode!
     var timerLabel: SKLabelNode!
@@ -71,12 +77,26 @@ class GameScene: SKScene {
         timerLabel.position = CGPoint(x: 512, y: 710)
         addChild(timerLabel)
         
+        bulletsTierOne = SKSpriteNode(texture: bulletTexture[showBullet])
+        bulletsTierOne.position = CGPoint(x: 100, y: 700)
+        bulletsTierOne.zPosition = -1
+        addChild(bulletsTierOne)
+        
+        bulletsTierTwo = SKSpriteNode(texture: bulletTexture[showBullet])
+        bulletsTierTwo.position = CGPoint(x: 180, y: 700)
+        bulletsTierTwo.zPosition = -1
+        addChild(bulletsTierTwo)
+        
+        cursor = SKSpriteNode(imageNamed: "cursor")
+        cursor.position = CGPoint(x: 512, y: 384)
+        addChild(cursor)
+        
+        
         startTimer()
         
     }
     
     override func update(_ currentTime: TimeInterval) {
-        
         
     }
     
@@ -94,6 +114,18 @@ class GameScene: SKScene {
             gameOver.zPosition = 1
             addChild(gameOver)
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        cursor.position = touch.location(in: self)
+        
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        cursor.position = touch.location(in: self)
+    
     }
     
 }
