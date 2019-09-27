@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Nineteen - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
+- [Project Nineteen - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 
 ### Pending Milestones
 
@@ -139,6 +139,7 @@ This mainly covers the fundamentals of: MKMapView, MKAnnotation, CLLocationCoord
 **Leveling up**
 
 - Day 67 - [Project Nineteen - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
+- Day 68 - [Project Nineteen - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 
 ### :books: Blogs 
 

@@ -10,3 +10,14 @@ Today I did (NSExtensionItem):
 - Making a shell app
 - Adding an Extension File and setting target
 - Setting in the .plist of Extension and adding a Javascript Custom Method
+
+**Project 19 - Day Two - Day 68 of 100DaysOfSwift**
+
+> Every developer loves and hates JavaScript a little bit. - Jeremy Foster
+
+Today I did (UITextView, Notification Center):
+
+- Establishing the communication of the extension
+- Adding a UITextView to write Javascript code and run it on the Extension
+- Fixing the keyboard scroll with the help of Notification Center
+
