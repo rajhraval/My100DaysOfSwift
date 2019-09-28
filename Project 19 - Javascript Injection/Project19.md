@@ -21,3 +21,13 @@ Today I did (UITextView, Notification Center):
 - Adding a UITextView to write Javascript code and run it on the Extension
 - Fixing the keyboard scroll with the help of Notification Center
 
+**Project 19 - Day Three - Day 69 of 100DaysOfSwift**
+
+>  Through determination and self-focus and discipline, you can accomplish anything. - Kimberly Guilfoyle 
+
+Today I completed the challenges:
+
+- Adding a UIAlertController to select prewritten scripts
+- Using UserDefaults to save URL
+- Adding a Table View to save own script
+

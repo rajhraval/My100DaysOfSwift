@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Nineteen - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
+- [Project Nineteen - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 
 ### Pending Milestones
 

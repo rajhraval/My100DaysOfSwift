@@ -21,6 +21,8 @@ class ActionViewController: UIViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Scripts", style: .plain, target: self, action: #selector(selectScript))
+        
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
@@ -45,11 +47,28 @@ class ActionViewController: UIViewController {
 
     @IBAction func done() {
         let item = NSExtensionItem()
-        let argument: NSDictionary = ["customJavaScript": script.text]
+        let argument: NSDictionary = ["customJavaScript": script.text ?? ""]
         let webDictionary: NSDictionary = [NSExtensionJavaScriptFinalizeArgumentKey: argument]
         let customJavaScript = NSItemProvider(item: webDictionary, typeIdentifier: kUTTypePropertyList as String)
         item.attachments = [customJavaScript]
         extensionContext?.completeRequest(returningItems: [item])
+    }
+    
+    @objc func selectScript() {
+        let ac = UIAlertController(title: "Select a Script", message: "Select a script you want to inject", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Alert displays Hello World", style: .default){
+            [weak self] _ in
+            self?.script.text = "alert(\"Hello World\")"
+        })
+        ac.addAction(UIAlertAction(title: "Alert displays Host Name", style: .default){
+            [weak self] _ in
+            self?.script.text = "alert(location.hostname)"
+        })
+        ac.addAction(UIAlertAction(title: "Window displays 100DaysOfSwift", style: .default){
+            [weak self] _ in
+            self?.script.text = "window.open(\"https://www.hackingwithswift.com/100\")"
+        })
+        present(ac, animated: true)
     }
 
     @objc func adjustForKeyboard(notification: Notification) {
