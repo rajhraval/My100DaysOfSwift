@@ -9,3 +9,26 @@ Today I did (UIBezierPath, for let in, SKAction.follow):
 - Setting up the project in Xcode
 - Building up the game scene, setting the Timer and SKAction.follow method
 - Check touches method
+
+**Project 20 - Day Two - Day 71 of 100DaysOfSwift**
+
+> Scott Forstall charged the iOS team with devising an interface for Undo — everyone knew the iPhone should have it,1 but no one had a good idea how to do it. One engineer joked that they could just make you shake the iPhone to invoke it. Forstall said he loved the idea, and what was proposed as a joke has been with us as the Undo interface ever since. - John Gruber
+
+Today I did (SKEmitterNode, Shake Gesture):
+
+- Making the explosion using the SKEmitterNode and Shake Gesture
+
+Today I completed challenges:
+
+- Created a score label using SKLabelNode
+- Invalidating Timer after few firework launches
+- Adding waitForDuration Method and removing the emitter from the Parent
+
+**Project 20 - Summary**
+
+I learnt about:
+
+- UIBezierPath
+- for case let in
+- Color blending
+- Shake gesture
