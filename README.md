@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty One - Day One]()
+- [Project Twenty One - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2021%20-%20Local%20Notifications/Project21.md)
 
 ### Pending Milestones
 
@@ -143,7 +143,7 @@ This mainly covers the fundamentals of: MKMapView, MKAnnotation, CLLocationCoord
 - Day 69 - [Project Nineteen - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 - Day 70 - [Project Twenty - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2020%20-%20Fireworks/Project20.md)
 - Day 71 - [Project Twenty - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2020%20-%20Fireworks/Project20.md)
-- Day 72 - [Project Twenty One - Day One]()
+- Day 72 - [Project Twenty One - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2021%20-%20Local%20Notifications/Project21.md)
 
 
 ### :books: Blogs 
