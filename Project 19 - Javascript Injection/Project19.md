@@ -31,3 +31,11 @@ Today I completed the challenges:
 - Using UserDefaults to save URL
 - Adding a Table View to save own script
 
+**Project 19 - Summary** 
+
+I learnt about:
+
+- NSExtensionItem
+- UITextView
+- Notification Center
+

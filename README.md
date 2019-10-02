@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty One - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2021%20-%20Local%20Notifications/Project21.md)
+- [Project Twenty One - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2021%20-%20Local%20Notifications/Project21.md)
 
 ### Pending Milestones
 
@@ -138,12 +138,15 @@ This mainly covers the fundamentals of: MKMapView, MKAnnotation, CLLocationCoord
 
 **Leveling up**
 
+This mainly covers the fundamentals of: NSExtensionItem, UITextView, Notification Center, UIBezierPath, for case let in, Color blending, Shake gesture, UNUserNotificationCenter, UNNotificationRequest, UNNotificationCategory and ```didRecieve``` method of UserNotifcations Framework
+
 - Day 67 - [Project Nineteen - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 - Day 68 - [Project Nineteen - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 - Day 69 - [Project Nineteen - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2019%20-%20Javascript%20Injection/Project19.md)
 - Day 70 - [Project Twenty - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2020%20-%20Fireworks/Project20.md)
 - Day 71 - [Project Twenty - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2020%20-%20Fireworks/Project20.md)
 - Day 72 - [Project Twenty One - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2021%20-%20Local%20Notifications/Project21.md)
+- Day 73 - [Project Twenty One - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2021%20-%20Local%20Notifications/Project21.md)
 
 
 ### :books: Blogs 

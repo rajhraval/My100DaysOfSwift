@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(showScore))
+        
+        remind()
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "spain", "uk", "us"]
         
@@ -93,6 +96,52 @@ class ViewController: UIViewController {
         ac.addAction(UIAlertAction(title: "Close", style: .cancel))
         ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(ac, animated: true)
+    }
+    
+    func remind() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) {
+            granted, error in
+            if granted {
+                self.callNotification()
+            } else {
+                print("Notifications Failed")
+            }
+        }
+    }
+    
+    func callNotification() {
+        let center = UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()
+        center.delegate = self
+        
+        let playGame = UNNotificationAction(identifier: "playGame", title: "Play the game!", options: .foreground)
+        
+        let category = UNNotificationCategory(identifier: "game", actions: [playGame], intentIdentifiers: [])
+        
+        center.setNotificationCategories([category])
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Let's Crack It!"
+        content.body = "Can you beat your own high score?"
+        content.categoryIdentifier = "game"
+        content.sound = .default
+        
+        let timeInterval = 86400
+        
+        for i in 1...7 {
+    
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timeInterval * i), repeats: true)
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            
+            center.add(request)
+            
+            print("I triggered notification")
+        }
+        
+        center.setNotificationCategories([category])
+        
     }
     
 }
