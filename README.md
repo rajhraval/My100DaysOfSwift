@@ -6,12 +6,15 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone VIII]()
+- [Project Twenty Two - Day One]()
+
+
 ### Pending Milestones
 
 - [Milestone Project - IV]() in Working Phase
 - [Milestone Project-  VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) in Process
 - [Milestone Project VII]()
+- [Milestone Project VIII]()
 
 ### :clipboard: Topics
 
@@ -150,6 +153,10 @@ This mainly covers the fundamentals of: NSExtensionItem, UITextView, Notificatio
 **Consolidation Eight**
 
 - Day 74 - [Milestone Project - VIII]()
+
+**Beacons and Bombs**
+
+- Day 75 - [Project Twent Two - Day One]()
 
 
 ### :books: Blogs 
