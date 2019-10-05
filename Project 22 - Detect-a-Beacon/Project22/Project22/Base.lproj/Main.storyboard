@@ -16,7 +16,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qom-Lw-RIH">
-                                <rect key="frame" x="129.5" y="429" width="155" height="48"/>
+                                <rect key="frame" x="129" y="82" width="155" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-Fa-TsB">
+                                <rect key="frame" x="78" y="158" width="256" height="256"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="VRN-cN-yrS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skg-12-vaB">
+                                <rect key="frame" x="78" y="539" width="256" height="256"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-gK-ACI">
+                                <rect key="frame" x="130" y="455" width="155" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -24,18 +41,32 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qom-Lw-RIH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fb5-kj-ShX"/>
-                            <constraint firstItem="qom-Lw-RIH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hOH-SY-Mee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="skg-12-vaB" secondAttribute="bottom" constant="67" id="1fn-yy-wzs"/>
+                            <constraint firstItem="bbv-gK-ACI" firstAttribute="top" secondItem="SDe-Fa-TsB" secondAttribute="bottom" constant="41" id="CEo-lg-Iho"/>
+                            <constraint firstItem="qom-Lw-RIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="EaF-8n-xOZ"/>
+                            <constraint firstItem="SDe-Fa-TsB" firstAttribute="top" secondItem="qom-Lw-RIH" secondAttribute="bottom" constant="28" id="MCI-Yi-s92"/>
+                            <constraint firstItem="skg-12-vaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="No6-ds-wpi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qom-Lw-RIH" secondAttribute="trailing" constant="130" id="SJD-Qe-wSX"/>
+                            <constraint firstItem="skg-12-vaB" firstAttribute="top" secondItem="bbv-gK-ACI" secondAttribute="bottom" constant="36" id="Vwo-4t-gG6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="skg-12-vaB" secondAttribute="trailing" constant="80" id="WJb-3F-B5G"/>
+                            <constraint firstItem="bbv-gK-ACI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="biF-bM-mKb"/>
+                            <constraint firstItem="SDe-Fa-TsB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="kaA-39-FjZ"/>
+                            <constraint firstItem="qom-Lw-RIH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="le6-kJ-WNH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SDe-Fa-TsB" secondAttribute="trailing" constant="80" id="u9W-sz-fe2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbv-gK-ACI" secondAttribute="trailing" constant="129" id="viq-rD-4YO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="circleView" destination="SDe-Fa-TsB" id="oNc-qG-AgI"/>
+                        <outlet property="circleViewTwo" destination="skg-12-vaB" id="aQv-Cb-NvN"/>
                         <outlet property="distanceReading" destination="qom-Lw-RIH" id="Nug-as-1sJ"/>
+                        <outlet property="distanceReadingTwo" destination="bbv-gK-ACI" id="y3r-Lo-yQ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
 </document>

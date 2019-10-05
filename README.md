@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Two - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2022%20-%20Detect-a-Beacon/Project22.md)
+- [Project Twenty Two - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2022%20-%20Detect-a-Beacon/Project22.md)
 
 
 ### Pending Milestones
@@ -157,6 +157,7 @@ This mainly covers the fundamentals of: NSExtensionItem, UITextView, Notificatio
 **Beacons and Bombs**
 
 - Day 75 - [Project Twent Two - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2022%20-%20Detect-a-Beacon/Project22.md)
+- Day 76 - [Project Twent Two - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2022%20-%20Detect-a-Beacon/Project22.md)
 
 
 ### :books: Blogs 
