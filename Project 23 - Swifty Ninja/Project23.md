@@ -11,3 +11,12 @@ Today I did (SKShapeNode, UIBezierPath, touchesEnded(), AVAudioPlayer):
 - Creating Slice Effects with the help of cgPath and UIBezierPath
 - Creating the enemy and the sound effects using AVAudioPlayer
 
+**Project 23 - Day One - Day 78 of 100DaysOfSwift**
+
+> The most certain way to succeed is always to try just one more time. - Thomas Edison
+
+Today I did (CaseIterable, SKTexture, DispatchQueue.Main.AsyncAfter):
+
+- Creating sequence for tossing enemies and bombs using CaseIterable
+- Creating methods to slice the enemies and score points
+- Creating and destroying player lives using SKTexture
