@@ -14,12 +14,13 @@ enum ForceBomb {
 }
 
 enum SequenceType: CaseIterable {
-    case oneNoBomb, one, twoWithOneBomb, two, three, four, chain, fastChain
+    case oneNoBomb, one, twoWithOneBomb, two, three, four, chain, fastChain, fast
 }
 
 class GameScene: SKScene {
     
     var gameScore: SKLabelNode!
+    var gameOverLabel: SKLabelNode!
     
     var score = 0 {
         didSet {
@@ -47,6 +48,10 @@ class GameScene: SKScene {
     var nextSequenceQueued = true
     var isGameEnded = false
     
+    let randomXPosition = Int.random(in: 64...940)
+    let randomXVelocityA = Int.random(in: 3...5)
+    let randomXVelocityB = Int.random(in: 8...15)
+    
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "sliceBackground")
         background.position = CGPoint(x: 512, y: 384)
@@ -57,22 +62,7 @@ class GameScene: SKScene {
         physicsWorld.gravity = CGVector(dx: 0, dy: -6)
         physicsWorld.speed = 0.85
         
-        createScores()
-        createLives()
-        createSlices()
-        
-        sequence = [.oneNoBomb, .oneNoBomb, .twoWithOneBomb, .twoWithOneBomb, .three, .one, .chain]
-        
-        for _ in 0...1000 {
-            if let nextSequence = SequenceType.allCases.randomElement() {
-                sequence.append(nextSequence)
-            }
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            [weak self] in
-            self?.tossEnemies()
-        }
+        startGame()
         
     }
     
@@ -128,6 +118,11 @@ class GameScene: SKScene {
         
         for case let node as SKSpriteNode in nodesAtPoint {
             if node.name == "enemy" {
+                
+                if sequencePosition == 9 {
+                    score += 2
+                }
+                
                 if let emitter = SKEmitterNode(fileNamed: "sliceHitEnemy") {
                     emitter.position = node.position
                     addChild(emitter)
@@ -177,6 +172,13 @@ class GameScene: SKScene {
                 run(SKAction.playSoundFileNamed("explosion.caf", waitForCompletion: false))
                 
                 endGame(triggeredByBomb: true)
+                gameOverLabel = SKLabelNode(fontNamed: "Chalkduster")
+                gameOverLabel.position = CGPoint(x: 512, y: 384)
+                gameOverLabel.fontSize = 64
+                gameOverLabel.text = "GAME OVER"
+                addChild(gameOverLabel)
+                
+                node.removeAllChildren()
             }
         }
     }
@@ -300,13 +302,13 @@ class GameScene: SKScene {
         let randomXVelocity: Int
         
         if randomPosition.x < 256 {
-            randomXVelocity = Int.random(in: 8...15)
+            randomXVelocity = randomXVelocityB
         } else if randomPosition.x < 512 {
-            randomXVelocity = Int.random(in: 3...5)
+            randomXVelocity = randomXVelocityA
         } else if randomPosition.x < 768 {
-            randomXVelocity = -Int.random(in: 3...5)
+            randomXVelocity = -randomXVelocityA
         } else {
-            randomXVelocity = -Int.random(in: 8...15)
+            randomXVelocity = -randomXVelocityB
         }
         
         let randomYVelocity = Int.random(in: 24...32)
@@ -334,12 +336,37 @@ class GameScene: SKScene {
         } else {
             life = livesImage[2]
             endGame(triggeredByBomb: false)
+            
+            gameOverLabel = SKLabelNode(fontNamed: "Chalkduster")
+            gameOverLabel.position = CGPoint(x: 512, y: 384)
+            gameOverLabel.fontSize = 64
+            gameOverLabel.text = "GAME OVER"
+            addChild(gameOverLabel)
         }
         
         life.texture = SKTexture(imageNamed: "sliceLifeGone")
         life.xScale = 1.3
         life.yScale = 1.3
         life.run(SKAction.scale(to: 1, duration: 0.1))
+    }
+    
+    func startGame() {
+        createScores()
+        createLives()
+        createSlices()
+        
+        sequence = [.oneNoBomb, .oneNoBomb, .twoWithOneBomb, .twoWithOneBomb, .three, .one, .chain]
+        
+        for _ in 0...1000 {
+            if let nextSequence = SequenceType.allCases.randomElement() {
+                sequence.append(nextSequence)
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            [weak self] in
+            self?.tossEnemies()
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -453,7 +480,25 @@ class GameScene: SKScene {
                 [weak self] in
                 self?.createEnemy()
             }
+        case .fast:
+            createEnemy()
             
+            DispatchQueue.main.asyncAfter(deadline: .now() + chainDelay / 50.0) {
+                [weak self] in
+                self?.createEnemy()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + chainDelay / 50.0 * 2) {
+                [weak self] in
+                self?.createEnemy()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + chainDelay / 50.0 * 3) {
+                [weak self] in
+                self?.createEnemy()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + chainDelay / 50.0 * 4) {
+                [weak self] in
+                self?.createEnemy()
+            }
         }
         sequencePosition += 1
         nextSequenceQueued = false
