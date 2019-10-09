@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Four - Part One]()
+- [Project Twenty Four - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
 
 ### Pending Milestones
 
@@ -160,7 +160,7 @@ This mainly covers the fundamentals of: NSExtensionItem, UITextView, Notificatio
 - Day 77 - [Project Twenty Three - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2023%20-%20Swifty%20Ninja/Project23.md)
 - Day 78 - [Project Twenty Three - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2023%20-%20Swifty%20Ninja/Project23.md)
 - Day 79 - [Project Twenty Three - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2023%20-%20Swifty%20Ninja/Project23.md)
-- Day 80 - [Project Twenty Four - Day One]()
+- Day 80 - [Project Twenty Four - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
 
 
 ### :books: Blogs 
