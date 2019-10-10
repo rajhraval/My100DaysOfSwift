@@ -79,3 +79,38 @@ attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 16), range
 attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 24), range: NSRange(location: 8, length: 1))
 attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 32), range: NSRange(location: 10, length: 4))
 attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 40), range: NSRange(location: 15, length: 6))
+
+
+//MARK: Challenge One - withPrefix method in String by creating an Extension
+
+extension String {
+    func withPrefix(_ prefix: String) -> String {
+        guard !self.hasPrefix(prefix) else { return self }
+        return String(self + prefix)
+    }
+}
+
+let a = "car"
+print(a.withPrefix("pet"))
+
+//MARK: Challenge Two - isNumeric property in String by creating an Extension
+
+extension String {
+    var isNumeric: Bool {
+        return Double(self) != nil
+    }
+}
+
+let b = "3.14"
+print(b.isNumeric)
+
+//MARK: Challenge Three - lines property in String by creating an Extension
+
+extension String {
+    var lines: [String] {
+        return self.components(separatedBy: "\n")
+    }
+}
+
+let c = "This\nis\na\nsuch\ngreat\nthing"
+print(c.lines)

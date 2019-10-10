@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Four - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
+- [Project Twenty Four - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
 
 ### Pending Milestones
 
@@ -155,12 +155,15 @@ This mainly covers the fundamentals of: NSExtensionItem, UITextView, Notificatio
 
 **Beacons and Bombs**
 
+This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLBeaconRegion, CaseIterable, AVAudioPlayer, SKShapeNode, Physics Speed, removeFirst, Action Groups and Sequence, NSAttributed Strings and Writing Extensions
+
 - Day 75 - [Project Twenty Two - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2022%20-%20Detect-a-Beacon/Project22.md)
 - Day 76 - [Project Twenty Two - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2022%20-%20Detect-a-Beacon/Project22.md)
 - Day 77 - [Project Twenty Three - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2023%20-%20Swifty%20Ninja/Project23.md)
 - Day 78 - [Project Twenty Three - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2023%20-%20Swifty%20Ninja/Project23.md)
 - Day 79 - [Project Twenty Three - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2023%20-%20Swifty%20Ninja/Project23.md)
 - Day 80 - [Project Twenty Four - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
+- Day 81 - [Project Twenty Four - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
 
 
 ### :books: Blogs 

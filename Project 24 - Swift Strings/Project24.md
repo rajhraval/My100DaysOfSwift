@@ -10,3 +10,21 @@ Today I did (NSAttributedString, Extensions of Strings):
 - Reading a String Element like an Array Element
 - Working on String Extensions (```hasPrefix```, ```hasSuffix```, ```deletingPrefix```, ```deletingSuffix```, ```capitalizedFirst```,  ```contains(where: )```)
 - NSAttributedStrings
+
+**Project 24 - Day Two - Day 81 of 100DaysOfSwift**
+
+> People ignore design that ignores people. - Frank Chimero
+
+Today I completed the challenges: 
+
+- Creating Extension: a withPrefix method, add prefix to a string and return itself if the string has that prefix
+- Creating Extension: a isNumeric property checks that a String contains a numeric and returning a Bool\
+- Creating Extension: a lines property to array of lines in a string 
+
+**Project 24 - Summary**
+
+I learnt about:
+
+- NSAttributed Strings
+- Writing Extensions
+
