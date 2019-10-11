@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Four - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
+- [Milestone Project - IX](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2022-24/milestone8.md)
 
 ### Pending Milestones
 
@@ -86,7 +86,7 @@ This mainly covers the fundamentals of - Downloading JSON with Data, Codable Pro
 
 **Consolidation Four**
 
-- Day 41 - [Milestone Project - IV]() In Working Phase
+- Day 41 - [Milestone Project - IV]()
 
 **A Whole New World**
 
@@ -167,7 +167,7 @@ This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLB
 
 **Consolidation Nine**
 
-- Day 82 - [Milestone Project - IX]()
+- Day 82 - [Milestone Project - IX](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2022-24/milestone8.md)
 
 
 ### :books: Blogs 
