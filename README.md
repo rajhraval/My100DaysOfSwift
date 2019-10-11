@@ -165,6 +165,10 @@ This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLB
 - Day 80 - [Project Twenty Four - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
 - Day 81 - [Project Twenty Four - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2024%20-%20Swift%20Strings/Project24.md)
 
+**Consolidation Nine**
+
+- Day 82 - [Milestone Project - IX]()
+
 
 ### :books: Blogs 
 
