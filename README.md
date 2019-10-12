@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone Project - IX](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2022-24/milestone8.md)
+- [Project Twenty Five - Part One]()
 
 ### Pending Milestones
 
@@ -168,6 +168,10 @@ This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLB
 **Consolidation Nine**
 
 - Day 82 - [Milestone Project - IX](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2022-24/milestone8.md)
+
+**Multipeer and Motion**
+
+- Day 83 - [Project Twenty Five - Day One]()
 
 
 ### :books: Blogs 
