@@ -22,8 +22,17 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         // Do any additional setup after loading the view.
         
         title = "Selfie Share"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(importPicture))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showConnectionPrompt))
+        
+        let camera = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(importPicture))
+        
+        let message = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(composeMessage))
+        
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showConnectionPrompt))
+        
+        let info = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(userStatus))
+        
+        navigationItem.leftBarButtonItems = [add, info]
+        navigationItem.rightBarButtonItems = [message, camera]
         
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         mcSession?.delegate = self
@@ -63,6 +72,33 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         present(picker, animated: true)
     }
     
+    @objc func composeMessage() {
+        let ac = UIAlertController(title: "Compose a message", message: "Send a message to the group", preferredStyle: .alert)
+        ac.addTextField()
+        ac.addAction(UIAlertAction(title: "Send", style: .default){
+            [weak self, weak ac] _ in
+            guard let message = ac?.textFields?[0].text else { return }
+            self?.sendMessage(message)
+        })
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
+    }
+    
+    func sendMessage(_ message: String) {
+        guard let mcSession = mcSession else { return }
+        
+        if mcSession.connectedPeers.count > 0 {
+            let messageData = Data(message.utf8)
+            do {
+                try mcSession.send(messageData, toPeers: mcSession.connectedPeers, with: .reliable)
+            } catch {
+                let ac = UIAlertController(title: "Send Error", message: error.localizedDescription, preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
+            }
+        }
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else {
             return
@@ -92,6 +128,12 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         ac.addAction(UIAlertAction(title: "Host a session", style: .default, handler: startHosting))
         ac.addAction(UIAlertAction(title: "Join a session", style: .default, handler: joinSession))
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
+    }
+    
+    @objc func showAlert(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(ac, animated: true)
     }
     
@@ -125,9 +167,23 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
             
         case .notConnected:
             print("PeerID: \(peerID.displayName)")
+            showAlert(title: "Member Disconnected", message: "\(peerID.displayName) has left the session")
+            
         @unknown default:
             print("Unknown State recieved: \(peerID.displayName)")
         }
+    }
+    
+    @objc func userStatus() {
+        guard let mcSession = mcSession else { return }
+        
+        let peers = mcSession.connectedPeers.map {
+            $0.displayName
+        }
+        
+        let ac = UIAlertController(title: "Total Users", message: "\(peers) are present", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
