@@ -8,3 +8,14 @@ Today I did (fatalError(), SKAction, Enums):
 
 - Setting up the project in Xcode
 - Loading level from a text file using CategoryBitMask, CollisionBitMask, ContactTestBitMask physics body
+
+**Project 26 - Day Two - Day 86 of 100DaysOfSwift**
+
+> It’s true: when something exceeds your ability to understand how it works, it sort of becomes magical – and that’s exactly what the iPad is. - Jony Ive
+
+Today I did(Combining bitmasks using ```|```,  SKAction sequences, CoreMotion, compiler preprocessors):
+
+- Tilting to move using CoreMotionManager
+- Contacting with the vortex, stars and finish line
+
+
