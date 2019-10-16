@@ -18,4 +18,23 @@ Today I did(Combining bitmasks using ```|```,  SKAction sequences, CoreMotion, c
 - Tilting to move using CoreMotionManager
 - Contacting with the vortex, stars and finish line
 
+**Project 26 - Day Three - Day 87 of 100DaysOfSwift**
 
+> Surprise and delight and connection are remarkable. - Seth Godin
+
+Today I completed the challenges:
+
+- Refactoring the ```loadLevel()```
+- Adding and loading different levels
+- Adding teleports to reach from one position to another
+
+**Project 26 - Summary**
+
+I learnt about:
+
+- CoreMotion
+- Compiler Preprocessors
+- SKAction sequences
+- Combining bitmasks using ```|```
+- fatalError()
+- UInt32
