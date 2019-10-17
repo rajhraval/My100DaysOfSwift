@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Seven - Part One]()
+- [Project Twenty Seven - Part One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2027%20-%20Shapes/Project27.md)
 
 ### Pending Milestones
 
@@ -176,7 +176,7 @@ This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLB
 - Day 85 - [Project Twenty Six - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2026%20-%20Marble%20Maze/Project26.md)
 - Day 86 - [Project Twenty Six - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2026%20-%20Marble%20Maze/Project26.md)
 - Day 87 - [Project Twenty Six - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2026%20-%20Marble%20Maze/Project26.md)
-- Day 88 - [Project Twenty Seven - Day One]()
+- Day 88 - [Project Twenty Seven - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2027%20-%20Shapes/Project27.md)
 
 
 ### :books: Blogs 
