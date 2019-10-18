@@ -12,3 +12,13 @@ Today I did (UIGraphicsImageRenderer, CGRects, NSAttributedString):
 - Ellipses and Checkboards
 - Transforming Rectangles and Lines
 - Image and Texts using Core Graphics
+
+**Project 28 - Day Two - Day 89 of 100DaysOfSwift**
+
+> Playground – noun: a place where people can play.
+
+Today I completed the challenges:
+
+- Drawing an Emoji
+- Drawing a Word using ```move(to:)``` and ```addLine(to:)```
+- Rendering Text on the Image in Project 1

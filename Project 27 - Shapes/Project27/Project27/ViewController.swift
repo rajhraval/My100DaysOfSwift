@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func redrawTapped(_ sender: Any) {
         currentDrawType += 1
-        if currentDrawType > 5 {
+        if currentDrawType > 7 {
             currentDrawType = 0
         }
         
@@ -45,6 +45,12 @@ class ViewController: UIViewController {
             
         case 5:
             drawImagesAndText()
+            
+        case 6:
+            drawEmoji()
+            
+        case 7:
+            drawWord()
             
         default:
             break
@@ -176,6 +182,85 @@ class ViewController: UIViewController {
             let mouse = UIImage(named: "mouse")
             mouse?.draw(at: CGPoint(x: 300, y: 150))
             
+        }
+                
+         imageView.image = image
+    }
+    
+    func drawEmoji() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+         
+         let image = renderer.image {
+            ctx in
+            
+            ctx.cgContext.translateBy(x: 100, y: 100)
+            
+            let face = CGRect(x: -100, y: -100, width: 200, height: 200).insetBy(dx: 5, dy: 5)
+            ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
+            ctx.cgContext.setStrokeColor(UIColor.orange.cgColor)
+            ctx.cgContext.setLineWidth(7)
+            ctx.cgContext.addEllipse(in: face)
+            ctx.cgContext.drawPath(using: .fillStroke)
+            
+            let mouth = CGRect(x: -20, y: 25, width: 40, height: 40)
+            ctx.cgContext.setFillColor(UIColor.red.cgColor)
+            ctx.cgContext.addEllipse(in: mouth)
+            ctx.cgContext.drawPath(using: .fill)
+            
+            let leftEye = CGRect(x: -45, y: -35, width: 25, height: 30)
+            ctx.cgContext.setFillColor(UIColor.black.cgColor)
+            ctx.cgContext.addEllipse(in: leftEye)
+            ctx.cgContext.drawPath(using: .fill)
+            
+            let rightEye = CGRect(x: 20, y: -35, width: 25, height: 30)
+            ctx.cgContext.setFillColor(UIColor.black.cgColor)
+            ctx.cgContext.addEllipse(in: rightEye)
+            ctx.cgContext.drawPath(using: .fill)
+        }
+                
+         imageView.image = image
+    }
+    
+    func drawWord() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+         
+         let image = renderer.image {
+            ctx in
+            
+            let cx = ctx.cgContext
+            cx.setStrokeColor(UIColor.black.cgColor)
+            cx.setLineWidth(1)
+            
+            // T
+            cx.move(to: CGPoint(x: 35, y: 40))
+            cx.addLine(to: CGPoint(x: 106, y: 40))
+            cx.move(to: CGPoint(x: 70, y: 40))
+            cx.addLine(to: CGPoint(x: 70, y: 158))
+            
+            // W
+            cx.move(to: CGPoint(x: 121, y: 40))
+            cx.addLine(to: CGPoint(x: 146, y: 158))
+            cx.move(to: CGPoint(x: 146, y: 158))
+            cx.addLine(to: CGPoint(x: 174, y: 40))
+            cx.move(to: CGPoint(x: 174, y: 40))
+            cx.addLine(to: CGPoint(x: 199, y: 158))
+            cx.move(to: CGPoint(x: 199, y: 158))
+            cx.addLine(to: CGPoint(x: 227, y: 40))
+            
+            // I
+            cx.move(to: CGPoint(x: 251, y: 40))
+            cx.addLine(to: CGPoint(x: 251, y: 158))
+            
+            // N
+            cx.move(to: CGPoint(x: 286, y: 40))
+            cx.addLine(to: CGPoint(x: 286, y: 158))
+            cx.move(to: CGPoint(x: 286, y: 40))
+            cx.addLine(to: CGPoint(x: 347, y: 158))
+            cx.move(to: CGPoint(x: 347, y: 40))
+            cx.addLine(to: CGPoint(x: 347, y: 158))
+            
+            cx.drawPath(using: .fillStroke)
+
         }
                 
          imageView.image = image

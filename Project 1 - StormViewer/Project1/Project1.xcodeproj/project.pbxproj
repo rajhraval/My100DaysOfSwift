@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF4D410022FB2B510033C01D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CF4D410022FB2B510033C01D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		CFF183D522F9BA6200D272EE /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF183D822F9BA6200D272EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF183DA22F9BA6200D272EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
