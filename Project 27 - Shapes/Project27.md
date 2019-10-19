@@ -22,3 +22,11 @@ Today I completed the challenges:
 - Drawing an Emoji
 - Drawing a Word using ```move(to:)``` and ```addLine(to:)```
 - Rendering Text on the Image in Project 1
+
+**Project 28 - Summary**
+
+I learnt about:
+
+- UIGraphicsImageRenderer
+- CGRects
+- NSAttributedString

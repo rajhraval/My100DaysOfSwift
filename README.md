@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Seven - Part Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2027%20-%20Shapes/Project27.md)
+- [Milestone Project - IX]()
 
 ### Pending Milestones
 
@@ -171,6 +171,8 @@ This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLB
 
 **Multipeer and Motion**
 
+This mainly covers the fundamentals of: MultipeerConnectivity, UICollectionView, MCSession, MCPeerID, MCAdvertiserAssistant, MCBrowserViewController, CoreMotion, Compiler Preprocessors, SKAction sequences, Combining bitmasks using ```|```, fatalError(), UInt32, UIGraphicsImageRenderer, CGRects and NSAttributedString
+
 - Day 83 - [Project Twenty Five - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2025%20-%20Selfie%20Share/Project25.md)
 - Day 84 - [Project Twenty Five - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2025%20-%20Selfie%20Share/Project25.md)
 - Day 85 - [Project Twenty Six - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2026%20-%20Marble%20Maze/Project26.md)
@@ -178,6 +180,10 @@ This mainly covers fundamentals of: CoreLocation, CLLocationManagerDelegate, CLB
 - Day 87 - [Project Twenty Six - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2026%20-%20Marble%20Maze/Project26.md)
 - Day 88 - [Project Twenty Seven - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2027%20-%20Shapes/Project27.md)
 - Day 89 - [Project Twenty Seven - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2027%20-%20Shapes/Project27.md)
+
+**Consolidation Ten**
+
+- Day 90 - [Milestone Project - IX]()
 
 ### :books: Blogs 
 
