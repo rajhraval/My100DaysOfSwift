@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone Project - IX]()
+- [Project Twenty Eight - Day One]()
 
 ### Pending Milestones
 
@@ -14,6 +14,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 - [Milestone Project - VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) 
 - [Milestone Project - VII]()
 - [Milestone Project - VIII]()
+- [Milestone Project - IX]()
 
 ### :clipboard: Topics
 
@@ -184,6 +185,11 @@ This mainly covers the fundamentals of: MultipeerConnectivity, UICollectionView,
 **Consolidation Ten**
 
 - Day 90 - [Milestone Project - IX]()
+- Day 91 - [CoreGraphics Redux]()
+
+**The Final Countdown**
+
+- Day 92 - [Project Twenty Eight - Day One]()
 
 ### :books: Blogs 
 
