@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1273D3235F309A001D6A0C /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1273D2235F309A001D6A0C /* PasswordManager.swift */; };
 		CF4A360F235DF75E00061857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A360E235DF75E00061857 /* AppDelegate.swift */; };
 		CF4A3611235DF75E00061857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A3610235DF75E00061857 /* SceneDelegate.swift */; };
 		CF4A3613235DF75E00061857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A3612235DF75E00061857 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1273D2235F309A001D6A0C /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 		CF4A360B235DF75E00061857 /* Project28.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project28.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4A360E235DF75E00061857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4A3610235DF75E00061857 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CF4A360E235DF75E00061857 /* AppDelegate.swift */,
 				CF4A3610235DF75E00061857 /* SceneDelegate.swift */,
 				CF4A3612235DF75E00061857 /* ViewController.swift */,
+				CF1273D2235F309A001D6A0C /* PasswordManager.swift */,
 				CF4A3623235DFC9F00061857 /* KeychainItemAccessibility.swift */,
 				CF4A3622235DFC9F00061857 /* KeychainWrapper.swift */,
 				CF4A3614235DF75E00061857 /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1273D3235F309A001D6A0C /* PasswordManager.swift in Sources */,
 				CF4A3613235DF75E00061857 /* ViewController.swift in Sources */,
 				CF4A3624235DFC9F00061857 /* KeychainWrapper.swift in Sources */,
 				CF4A360F235DF75E00061857 /* AppDelegate.swift in Sources */,

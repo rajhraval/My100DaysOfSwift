@@ -12,3 +12,23 @@ Today I did (UITextView, NotificationCentre, KeyChain, LocalAuthentication and F
 - Creating the basic text editor using UITextView and NotificationCentre for keyboard events
 - Saving data using KeyChainWrapper Classes
 - Embedding the FaceID using the Local Authentication Framework
+
+**Project 28 - Day Two - Day 93 of 100DaysOfSwift**
+
+> The online truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards. - Gene Spafford
+
+Today I completed the challenges:
+
+- Adding a Done bar button item, which would hide and lock the secret content
+- Adding Password System in the app to make it more secured
+- Adding Biometric Authentication in Project 10 - NameToFaces
+
+**Project 28 - Summary**
+
+I learnt about:
+
+- UITextView
+- NotificationCentre
+- KeyChain
+- LocalAuthentication
+- FaceID/Biometric Authentication

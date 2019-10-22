@@ -9,9 +9,10 @@
 import UIKit
 import LocalAuthentication
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PasswordManagerDelegate {
     
     @IBOutlet var secret: UITextView!
+    var passwordManager: PasswordManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,13 @@ class ViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(saveSecretMessage), name: UIApplication.willResignActiveNotification, object: nil)
+        
+        passwordManager = PasswordManager(controller: self)
+        passwordManager.delegate = self
+        if !passwordManager.isPasswordCreated() {
+            passwordManager.createPassword()
+        }
+        
     }
 
     @IBAction func authenticateTapped(_ sender: Any) {
@@ -37,9 +45,16 @@ class ViewController: UIViewController {
                     if success {
                         self?.unlockSecretMessage()
                     } else {
-                        let ac = UIAlertController(title: "Authenctication Failed", message: "You could not be verified.", preferredStyle: .alert)
-                        ac.addAction(UIAlertAction(title: "OK", style: .default))
-                        self?.present(ac, animated: true)
+                        guard let error = authenticationError as? LAError else { return }
+                        
+                        switch error.code {
+                        case .userFallback:
+                            self?.passwordManager.requirePassword()
+                        default:
+                            let ac = UIAlertController(title: "Authenctication Failed", message: "You could not be verified.", preferredStyle: .alert)
+                            ac.addAction(UIAlertAction(title: "OK", style: .default))
+                            self?.present(ac, animated: true)
+                        }
                     }
                 }
             }
@@ -70,6 +85,9 @@ class ViewController: UIViewController {
     }
     
     func unlockSecretMessage() {
+        let done = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(saveSecretMessage))
+        navigationItem.rightBarButtonItem = done
+        
         secret.isHidden = false
         title = "Secret Stuff"
         
@@ -84,7 +102,19 @@ class ViewController: UIViewController {
         secret.isHidden = true
         
         title = "Nothing to see here"
+        
+        navigationItem.rightBarButtonItem = nil
     }
+    
+    func newPasswordCreationSuccessful() {
+        print("Password Creation Successful")
+    }
+    
+    func passwordAuthenticated() {
+        print("Password authenticated")
+        unlockSecretMessage()
+    }
+    
     
 }
 

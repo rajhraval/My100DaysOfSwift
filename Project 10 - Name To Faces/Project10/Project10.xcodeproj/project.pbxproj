@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1273D6235F35B6001D6A0C /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1273D4235F35B6001D6A0C /* KeychainItemAccessibility.swift */; };
+		CF1273D7235F35B6001D6A0C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1273D5235F35B6001D6A0C /* KeychainWrapper.swift */; };
+		CF1273D9235F36AD001D6A0C /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1273D8235F36AD001D6A0C /* PasswordManager.swift */; };
 		CF1C7BC4231D350800220065 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1C7BC3231D350800220065 /* Person.swift */; };
 		CF2B2810231B91B900D35EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B280F231B91B900D35EC1 /* AppDelegate.swift */; };
 		CF2B2812231B91B900D35EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B2811231B91B900D35EC1 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1273D4235F35B6001D6A0C /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		CF1273D5235F35B6001D6A0C /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		CF1273D8235F36AD001D6A0C /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 		CF1C7BC3231D350800220065 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CF2B280C231B91B900D35EC1 /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2B280F231B91B900D35EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				CF2B280F231B91B900D35EC1 /* AppDelegate.swift */,
+				CF1273D4235F35B6001D6A0C /* KeychainItemAccessibility.swift */,
+				CF1273D5235F35B6001D6A0C /* KeychainWrapper.swift */,
 				CF2B2811231B91B900D35EC1 /* ViewController.swift */,
+				CF1273D8235F36AD001D6A0C /* PasswordManager.swift */,
+				CF2B2821231B937F00D35EC1 /* PersonCell.swift */,
 				CF1C7BC3231D350800220065 /* Person.swift */,
 				CF2B2813231B91B900D35EC1 /* Main.storyboard */,
-				CF2B2821231B937F00D35EC1 /* PersonCell.swift */,
 				CF2B2816231B91BA00D35EC1 /* Assets.xcassets */,
 				CF2B2818231B91BA00D35EC1 /* LaunchScreen.storyboard */,
 				CF2B281B231B91BA00D35EC1 /* Info.plist */,
@@ -144,6 +153,9 @@
 				CF2B2822231B937F00D35EC1 /* PersonCell.swift in Sources */,
 				CF2B2812231B91B900D35EC1 /* ViewController.swift in Sources */,
 				CF1C7BC4231D350800220065 /* Person.swift in Sources */,
+				CF1273D9235F36AD001D6A0C /* PasswordManager.swift in Sources */,
+				CF1273D7235F35B6001D6A0C /* KeychainWrapper.swift in Sources */,
+				CF1273D6235F35B6001D6A0C /* KeychainItemAccessibility.swift in Sources */,
 				CF2B2810231B91B900D35EC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

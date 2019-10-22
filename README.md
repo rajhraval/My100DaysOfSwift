@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Eight - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2028%20-%20Secreter/Project28.md)
+- [Project Twenty Eight - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2028%20-%20Secreter/Project28.md)
 
 ### Pending Milestones
 
@@ -190,6 +190,7 @@ This mainly covers the fundamentals of: MultipeerConnectivity, UICollectionView,
 **The Final Countdown**
 
 - Day 92 - [Project Twenty Eight - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2028%20-%20Secreter/Project28.md)
+- Day 93 - [Project Twenty Eight - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2028%20-%20Secreter/Project28.md)
 
 ### :books: Blogs 
 
