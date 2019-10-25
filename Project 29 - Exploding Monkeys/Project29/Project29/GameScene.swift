@@ -17,6 +17,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var currentPlayer = 1
     
+    var windSpeed: CGFloat = 0
+    let earthsGravity: CGFloat = -9.8
+    
     var buildings = [BuildingNode]()
     weak var viewController: GameViewController?
    
@@ -149,6 +152,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func destroy(player: SKSpriteNode) {
+        
+        var resetScores = false
+        
+        if currentPlayer == 1 {
+            viewController?.player1Score += 1
+        } else {
+            viewController?.player2Score += 1
+        }
+        
+        if viewController?.player1Score == 3 || viewController?.player2Score == 3 {
+            viewController?.playerNumber.text = "Game Over! Player \(currentPlayer) wins!"
+            resetScores = true
+        }
+        
         if let explosion = SKEmitterNode(fileNamed: "hitPlayer") {
             explosion.position = player.position
             addChild(explosion)
@@ -157,7 +174,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.removeFromParent()
         banana.removeFromParent()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        restartGame(resetScores: resetScores)
+    }
+    
+    func changePlayer() {
+        if currentPlayer == 1 {
+            currentPlayer = 2
+        } else {
+            currentPlayer = 1
+        }
+        viewController?.activatePlayer(number: currentPlayer)
+    }
+    
+    func restartGame(resetScores: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            
+            guard let self = self else { return }
+            
+            if resetScores {
+                self.viewController?.player1Score = 0
+                self.viewController?.player2Score = 0
+            }
+            
             let newGame = GameScene(size: self.size)
             newGame.viewController = self.viewController
             self.viewController?.currentGame = newGame
@@ -168,15 +206,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let transition = SKTransition.doorway(withDuration: 1.5)
             self.view?.presentScene(newGame, transition: transition)
         }
-    }
-    
-    func changePlayer() {
-        if currentPlayer == 1 {
-            currentPlayer = 2
-        } else {
-            currentPlayer = 1
-        }
-        viewController?.activatePlayer(number: currentPlayer)
     }
     
     func bananaHit(building: SKNode, atPoint contactPoint: CGPoint) {
@@ -205,5 +234,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                changePlayer()
            }
     }
+    
+    func setWind() {
+           windSpeed = CGFloat.random(in: -2...2)
+           physicsWorld.gravity = CGVector(dx: windSpeed, dy: earthsGravity)
+
+           let displayedSpeed = Int(abs(windSpeed) * 15)
+           
+           switch windSpeed {
+           case _ where windSpeed < 0:
+               viewController?.windLabel.text = "<<< Wind \(displayedSpeed)"
+           case _ where windSpeed > 0:
+               viewController?.windLabel.text = "Wind \(displayedSpeed) >>>"
+           default:
+               viewController?.windLabel.text = "Wind calm"
+           }
+       }
     
 }
