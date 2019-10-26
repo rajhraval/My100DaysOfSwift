@@ -6,15 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Twenty Nine - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2029%20-%20Exploding%20Monkeys/Project29.md)
-
-### Pending Milestones
-
-- [Milestone Project - IV]()
-- [Milestone Project - VI](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2013-15/milestone5.md) 
-- [Milestone Project - VII]()
-- [Milestone Project - VIII]()
-- [Milestone Project - IX]()
+- [Project Thirty - Day One]()
 
 ### :clipboard: Topics
 
@@ -194,6 +186,7 @@ This mainly covers the fundamentals of: MultipeerConnectivity, UICollectionView,
 - Day 94 - [Project Twenty Nine - Day One](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2029%20-%20Exploding%20Monkeys/Project29.md)
 - Day 95 - [Project Twenty Nine - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2029%20-%20Exploding%20Monkeys/Project29.md)
 - Day 96 - [Project Twenty Nine - Day Three](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2029%20-%20Exploding%20Monkeys/Project29.md)
+- Day 97 - [Project Thirty - Day One]()
 
 
 ### :books: Blogs 
