@@ -11,3 +11,17 @@ Today I did (Time Profilers, Allocations Instruments, Advance CoreGraphics and C
 - Understanding how Instruments work and help
 - Fixing the show shadows for better time profiling
 - Fixing table view cells for better memory allocations
+
+**Project 30 - Day Two - Day 98 of 100DaysOfSwift**
+
+> Don't aim for perfection – aim for 'better than yesterday. - Izey Victoria Odiase
+
+Today I did:
+
+- Fixing the memory bugs
+
+Today I completed the challenges:
+
+- Removing all the force unwraps from Project 30
+- Testing Instruments App in other projects
+- Loading images during app launch itself

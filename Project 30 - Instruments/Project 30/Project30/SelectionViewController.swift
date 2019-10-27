@@ -10,8 +10,8 @@ import UIKit
 
 class SelectionViewController: UITableViewController {
 	var items = [String]() // this is the array that will store the filenames to load
-	var viewControllers = [UIViewController]() // create a cache of the detail view controllers for faster loading
 	var dirty = false
+    var itemSmall = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +25,35 @@ class SelectionViewController: UITableViewController {
 		// load all the JPEGs into our array
 		let fm = FileManager.default
 
-		if let tempItems = try? fm.contentsOfDirectory(atPath: Bundle.main.resourcePath!) {
+        guard let path = Bundle.main.resourcePath else { fatalError("Path not found") }
+        
+		if let tempItems = try? fm.contentsOfDirectory(atPath: path) {
 			for item in tempItems {
 				if item.range(of: "Large") != nil {
 					items.append(item)
 				}
 			}
 		}
+        
+        if itemSmall.isEmpty {
+        for imageIndex in 0...items.count - 1 {
+            
+            let currentImage = items[imageIndex]
+            let imageRootName = currentImage.replacingOccurrences(of: "Large", with: "Thumb")
+            
+            guard let path = Bundle.main.path(forResource: imageRootName, ofType: nil),
+            let original = UIImage(contentsOfFile: path) else {return}
+            
+            let imageName = UUID().uuidString
+            let pathDD = getDocumentsDirectory().appendingPathComponent(imageName)
+            
+            if let jpegData = original.jpegData(compressionQuality: 0.8) {
+                try? jpegData.write(to: pathDD)
+                    itemSmall.append(pathDD.path)
+                }
+            }
+        }
+        
     }
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -54,15 +76,20 @@ class SelectionViewController: UITableViewController {
         // Return the number of rows in the section.
         return items.count * 10
     }
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 		// find the image for this cell, and load its thumbnail
-		let currentImage = items[indexPath.row % items.count]
-		let imageRootName = currentImage.replacingOccurrences(of: "Large", with: "Thumb")
-		let path = Bundle.main.path(forResource: imageRootName, ofType: nil)!
-		let original = UIImage(contentsOfFile: path)!
+		let currentImage = itemSmall[indexPath.row % items.count]
+        guard let original = UIImage(contentsOfFile: currentImage) else {
+            return cell
+        }
 
         let renderRect = CGRect(origin: .zero, size: CGSize(width: 90, height: 90))
         let renderer = UIGraphicsImageRenderer(size: renderRect.size)
@@ -98,8 +125,7 @@ class SelectionViewController: UITableViewController {
 		// mark us as not needing a counter reload when we return
 		dirty = false
 
-		// add to our view controller cache and show
-		viewControllers.append(vc)
-		navigationController!.pushViewController(vc, animated: true)
+		
+		navigationController?.pushViewController(vc, animated: true)
 	}
 }
