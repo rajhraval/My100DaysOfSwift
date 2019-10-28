@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Project Thirty - Day Two](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Project%2030%20-%20Instruments/Project30.md)
+- [Milestone Project - X](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2028-30/milestone10.md)
 
 ### :clipboard: Topics
 
@@ -79,7 +79,7 @@ This mainly covers the fundamentals of - Downloading JSON with Data, Codable Pro
 
 **Consolidation Four**
 
-- Day 41 - [Milestone Project - IV]()
+- Day 41 - [Milestone Project - IV](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%207-9/milestone3.md)
 
 **A Whole New World**
 
@@ -128,7 +128,7 @@ This mainly covers the fundamentals of: MKMapView, MKAnnotation, CLLocationCoord
 
 **Consolidation Seven**
 
-- Day 66 - [Milestone Project - VII]()
+- Day 66 - [Milestone Project - VII](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2016-18/milestone6.md)
 
 **Leveling up**
 
@@ -144,7 +144,7 @@ This mainly covers the fundamentals of: NSExtensionItem, UITextView, Notificatio
 
 **Consolidation Eight**
 
-- Day 74 - [Milestone Project - VIII]()
+- Day 74 - [Milestone Project - VIII](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2019-21/Milestone7.md)
 
 **Beacons and Bombs**
 
@@ -176,8 +176,8 @@ This mainly covers the fundamentals of: MultipeerConnectivity, UICollectionView,
 
 **Consolidation Ten**
 
-- Day 90 - [Milestone Project - IX]()
-- Day 91 - [CoreGraphics Redux]()
+- Day 90 - [Milestone Project - IX](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2025-27/milestone9.md)
+- Day 91 - [CoreGraphics Redux](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2025-27/milestone9.md)
 
 **The Final Countdown**
 
@@ -193,7 +193,7 @@ This mainly covers the fundamentals about: UITextView, NotificationCentre, KeyCh
 
 **Consolidation Eleven**
 
-- Day 99 -  [Milestone Project - X]()
+- Day 99 -  [Milestone Project - X](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2028-30/milestone10.md)
 
 
 ### :books: Blogs 
