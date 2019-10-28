@@ -28,3 +28,12 @@ Today I completed the challenges:
 - Adding code and UI to track the player scores across levels, then make the game end after one player has won three times.
 - Adding Auto Layout rules
 - Using physics world gravity and wind changing property for changing direction and strength of the banana vector
+
+**Project 29 - Summary**
+
+I learnt about:
+
+- SKView
+- Connecting SpriteKit and UIKit
+- SKTransitions
+- Working with Mathematics and Physics

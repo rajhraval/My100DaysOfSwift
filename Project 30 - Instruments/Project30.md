@@ -16,7 +16,7 @@ Today I did (Time Profilers, Allocations Instruments, Advance CoreGraphics and C
 
 > Don't aim for perfection – aim for 'better than yesterday. - Izey Victoria Odiase
 
-Today I did:
+Today I did(Persistent and Transient Storage, Reference Cycles):
 
 - Fixing the memory bugs
 
@@ -25,3 +25,13 @@ Today I completed the challenges:
 - Removing all the force unwraps from Project 30
 - Testing Instruments App in other projects
 - Loading images during app launch itself
+
+**Project 30 - Summary**
+
+I learnt about:
+
+- Time Profilers
+- Allocations Instruments
+- Advance CoreGraphics and CALayer
+- Persistent and Transient Storage
+- Reference Cycles
