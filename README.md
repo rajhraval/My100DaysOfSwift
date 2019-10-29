@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Day 100 and the Final Exam!]()
+- [Day 100 and the Final Exam!](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day100.md)
 
 ### :clipboard: Topics
 
@@ -198,7 +198,7 @@ This mainly covers the fundamentals about: UITextView, NotificationCentre, KeyCh
 
 **The Final Examination**
 
-- Day 100 - [The Final Day of the Challenge!]()
+- Day 100 - [The Final Day of the Challenge!](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Day100.md)
 
 ### :books: Blogs 
 
