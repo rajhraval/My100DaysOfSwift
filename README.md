@@ -6,7 +6,7 @@ Daily practices and my journey for the 100DaysOfSwift Challenge.
 
 ### :pushpin: What's New Today? 
 
-- [Milestone Project - X](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2028-30/milestone10.md)
+- [Day 100 and the Final Exam!]()
 
 ### :clipboard: Topics
 
@@ -195,6 +195,10 @@ This mainly covers the fundamentals about: UITextView, NotificationCentre, KeyCh
 
 - Day 99 -  [Milestone Project - X](https://github.com/BuckyBoy6399/My100DaysOfSwift/blob/master/Milestone%20Project%2028-30/milestone10.md)
 
+
+**The Final Examination**
+
+- Day 100 - [The Final Day of the Challenge!]()
 
 ### :books: Blogs 
 
