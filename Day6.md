@@ -14,4 +14,4 @@ Today I learnt about:
 
 The Summary would be covered in the Day 7 of the 100DaysOfSwift.
 
-**That's all for the Day 7 of the HackingWithSwift!**
+**That's all for the Day 7 of the 100DaysOfSwift!**
